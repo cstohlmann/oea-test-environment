@@ -5,7 +5,14 @@
 			{
 				"name": "Get_userData_from_GraphAPI",
 				"type": "Copy",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Set currentDateTime",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
@@ -47,11 +54,11 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"filesystem": "stage1np",
-							"directory": "GraphAPI/Users",
-							"file": {
-								"value": "users.json",
+							"directory": {
+								"value": "@concat('GraphAPI/', variables('currentDateTime'), '/Users')",
 								"type": "Expression"
-							}
+							},
+							"file": "users.json"
 						}
 					}
 				]
@@ -60,7 +67,14 @@
 				"name": "Get_TeamsUserActivityDetails_from_GraphAPI",
 				"description": "",
 				"type": "Copy",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Set currentDateTime",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
@@ -102,11 +116,11 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"filesystem": "stage1np",
-							"directory": "GraphAPI/Teams_Activity_User_Detail",
-							"file": {
-								"value": "@concat(formatDateTime(utcnow(),'MM-dd-yyyy-hmmtt'),'.json')",
+							"directory": {
+								"value": "@concat('GraphAPI/', variables('currentDateTime'), '/Teams_Activity_User_Detail')",
 								"type": "Expression"
-							}
+							},
+							"file": "teamsActivityUserDetail.json"
 						}
 					}
 				]
@@ -115,7 +129,14 @@
 				"name": "Get_M365AppUserDetail_from_GraphAPI",
 				"description": "",
 				"type": "Copy",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "Set currentDateTime",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
@@ -157,21 +178,45 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"filesystem": "stage1np",
-							"directory": "GraphAPI/M365_App_User_Detail",
-							"file": {
-								"value": "@concat(formatDateTime(utcnow(),'MM-dd-yyyy-hmmtt'),'.json')",
+							"directory": {
+								"value": "@concat('GraphAPI/', variables('currentDateTime'), '/M365_App_User_Detail')",
 								"type": "Expression"
-							}
+							},
+							"file": "m365AppUserDetail.json"
 						}
 					}
 				]
+			},
+			{
+				"name": "Set currentDateTime",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "currentDateTime",
+					"value": {
+						"value": "@{formatDateTime(convertTimeZone(utcnow(), 'UTC', pipeline().parameters.timezone), 'yyyy-MM-ddTHH-mm-ss')}",
+						"type": "Expression"
+					}
+				}
 			}
 		],
+		"parameters": {
+			"timezone": {
+				"type": "string",
+				"defaultValue": "Central Standard Time"
+			}
+		},
+		"variables": {
+			"currentDateTime": {
+				"type": "String"
+			}
+		},
 		"folder": {
 			"name": "Graph API"
 		},
 		"annotations": [],
-		"lastPublishTime": "2021-11-08T19:36:27Z"
+		"lastPublishTime": "2021-11-09T20:05:30Z"
 	},
 	"type": "Microsoft.Synapse/workspaces/pipelines"
 }

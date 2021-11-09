@@ -12,6 +12,12 @@
 						"dependencyConditions": [
 							"Succeeded"
 						]
+					},
+					{
+						"activity": "Set currentDateTime",
+						"dependencyConditions": [
+							"Succeeded"
+						]
 					}
 				],
 				"policy": {
@@ -72,11 +78,11 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"filesystem": "stage1np",
-							"directory": "intune/devices",
-							"file": {
-								"value": "@concat(formatDateTime(utcnow(),'MM-dd-yyyy-hmmtt'),'.csv')",
+							"directory": {
+								"value": "@concat('intune/', variables('currentDateTime'), '/devices')",
 								"type": "Expression"
-							}
+							},
+							"file": "devices.csv"
 						}
 					}
 				]
@@ -271,6 +277,26 @@
 						"type": "Expression"
 					}
 				}
+			},
+			{
+				"name": "Set currentDateTime",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "GetBearerToken",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "currentDateTime",
+					"value": {
+						"value": "@{formatDateTime(convertTimeZone(utcnow(), 'UTC', pipeline().parameters.timezone), 'yyyy-MM-ddTHH-mm-ss')}",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"parameters": {
@@ -293,6 +319,10 @@
 			"ClientSecret": {
 				"type": "string",
 				"defaultValue": "e~D7Q~hLwURPBIrx.6jJK-KWP4uNSgU9PmfBq"
+			},
+			"timezone": {
+				"type": "string",
+				"defaultValue": "Central Standard Time"
 			}
 		},
 		"variables": {
@@ -304,13 +334,16 @@
 			},
 			"FinalURL": {
 				"type": "String"
+			},
+			"currentDateTime": {
+				"type": "String"
 			}
 		},
 		"folder": {
 			"name": "Intune Pipeline work"
 		},
 		"annotations": [],
-		"lastPublishTime": "2021-11-04T01:27:00Z"
+		"lastPublishTime": "2021-11-09T20:13:36Z"
 	},
 	"type": "Microsoft.Synapse/workspaces/pipelines"
 }

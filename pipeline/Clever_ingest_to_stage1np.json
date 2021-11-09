@@ -1,0 +1,372 @@
+{
+	"name": "Clever_ingest_to_stage1np",
+	"properties": {
+		"activities": [
+			{
+				"name": "daily-participation_sftp",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "CleverCSVFiles",
+						"type": "DatasetReference",
+						"parameters": {
+							"directory": "daily-participation/"
+						}
+					},
+					"fieldList": [
+						"childItems"
+					],
+					"storeSettings": {
+						"type": "SftpReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					},
+					"formatSettings": {
+						"type": "DelimitedTextReadSettings"
+					}
+				}
+			},
+			{
+				"name": "daily-participation_ForEach",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "daily-participation_sftp",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('daily-participation_sftp').output.childitems",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "daily-participation_stage1np",
+							"type": "GetMetadata",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"dataset": {
+									"referenceName": "DataLakeStage1np",
+									"type": "DatasetReference",
+									"parameters": {
+										"directory": {
+											"value": "@concat('Clever/daily-participation/',substring(item().name,0,10),'/',item().name)",
+											"type": "Expression"
+										}
+									}
+								},
+								"fieldList": [
+									"exists"
+								],
+								"storeSettings": {
+									"type": "AzureBlobFSReadSettings",
+									"recursive": true,
+									"enablePartitionDiscovery": false
+								},
+								"formatSettings": {
+									"type": "DelimitedTextReadSettings"
+								}
+							}
+						},
+						{
+							"name": "daily-participation_If_Statement",
+							"type": "IfCondition",
+							"dependsOn": [
+								{
+									"activity": "daily-participation_stage1np",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"userProperties": [],
+							"typeProperties": {
+								"expression": {
+									"value": "@activity('daily-participation_stage1np').output.exists",
+									"type": "Expression"
+								},
+								"ifFalseActivities": [
+									{
+										"name": "CleverDataFromSFTP_daily-participation",
+										"type": "Copy",
+										"dependsOn": [],
+										"policy": {
+											"timeout": "7.00:00:00",
+											"retry": 0,
+											"retryIntervalInSeconds": 30,
+											"secureOutput": false,
+											"secureInput": false
+										},
+										"userProperties": [],
+										"typeProperties": {
+											"source": {
+												"type": "DelimitedTextSource",
+												"storeSettings": {
+													"type": "SftpReadSettings",
+													"recursive": true,
+													"wildcardFolderPath": "daily-participation",
+													"wildcardFileName": {
+														"value": "@item().name",
+														"type": "Expression"
+													},
+													"enablePartitionDiscovery": false
+												},
+												"formatSettings": {
+													"type": "DelimitedTextReadSettings"
+												}
+											},
+											"sink": {
+												"type": "DelimitedTextSink",
+												"storeSettings": {
+													"type": "AzureBlobFSWriteSettings"
+												},
+												"formatSettings": {
+													"type": "DelimitedTextWriteSettings",
+													"quoteAllText": true,
+													"fileExtension": ".csv"
+												}
+											},
+											"enableStaging": false
+										},
+										"inputs": [
+											{
+												"referenceName": "CleverCSVFiles",
+												"type": "DatasetReference",
+												"parameters": {
+													"directory": "not_applicable"
+												}
+											}
+										],
+										"outputs": [
+											{
+												"referenceName": "DataLakeStage1np",
+												"type": "DatasetReference",
+												"parameters": {
+													"directory": {
+														"value": "@concat('Clever/daily-participation/',formatDateTime(substring(item().name,0,10),'yyyy-MM-ddTHHmm_ss'),'/')\n\n\n",
+														"type": "Expression"
+													}
+												}
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				}
+			},
+			{
+				"name": "resource-usage_sftp",
+				"type": "GetMetadata",
+				"dependsOn": [
+					{
+						"activity": "daily-participation_ForEach",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "CleverCSVFiles",
+						"type": "DatasetReference",
+						"parameters": {
+							"directory": "resource-usage/"
+						}
+					},
+					"fieldList": [
+						"childItems"
+					],
+					"storeSettings": {
+						"type": "SftpReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					},
+					"formatSettings": {
+						"type": "DelimitedTextReadSettings"
+					}
+				}
+			},
+			{
+				"name": "resource-usage_Foreach",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "resource-usage_sftp",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('resource-usage_sftp').output.childitems",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "resource-usage_stage1np",
+							"type": "GetMetadata",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"dataset": {
+									"referenceName": "DataLakeStage1np",
+									"type": "DatasetReference",
+									"parameters": {
+										"directory": {
+											"value": "@concat('Clever/resource-usage/',substring(item().name,0,10),'/',item().name)",
+											"type": "Expression"
+										}
+									}
+								},
+								"fieldList": [
+									"exists"
+								],
+								"storeSettings": {
+									"type": "AzureBlobFSReadSettings",
+									"recursive": true,
+									"enablePartitionDiscovery": false
+								},
+								"formatSettings": {
+									"type": "DelimitedTextReadSettings"
+								}
+							}
+						},
+						{
+							"name": "resource-usage_If_Statement",
+							"type": "IfCondition",
+							"dependsOn": [
+								{
+									"activity": "resource-usage_stage1np",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"userProperties": [],
+							"typeProperties": {
+								"expression": {
+									"value": "@activity('resource-usage_stage1np').output.exists",
+									"type": "Expression"
+								},
+								"ifFalseActivities": [
+									{
+										"name": "CleverDataFromSFTP_resource-usage",
+										"type": "Copy",
+										"dependsOn": [],
+										"policy": {
+											"timeout": "7.00:00:00",
+											"retry": 0,
+											"retryIntervalInSeconds": 30,
+											"secureOutput": false,
+											"secureInput": false
+										},
+										"userProperties": [],
+										"typeProperties": {
+											"source": {
+												"type": "DelimitedTextSource",
+												"storeSettings": {
+													"type": "SftpReadSettings",
+													"recursive": true,
+													"wildcardFolderPath": "resource-usage",
+													"wildcardFileName": {
+														"value": "@item().name",
+														"type": "Expression"
+													},
+													"enablePartitionDiscovery": false
+												},
+												"formatSettings": {
+													"type": "DelimitedTextReadSettings"
+												}
+											},
+											"sink": {
+												"type": "DelimitedTextSink",
+												"storeSettings": {
+													"type": "AzureBlobFSWriteSettings"
+												},
+												"formatSettings": {
+													"type": "DelimitedTextWriteSettings",
+													"quoteAllText": true,
+													"fileExtension": ".csv"
+												}
+											},
+											"enableStaging": false
+										},
+										"inputs": [
+											{
+												"referenceName": "CleverCSVFiles",
+												"type": "DatasetReference",
+												"parameters": {
+													"directory": "not_applicable"
+												}
+											}
+										],
+										"outputs": [
+											{
+												"referenceName": "DataLakeStage1np",
+												"type": "DatasetReference",
+												"parameters": {
+													"directory": {
+														"value": "@concat('Clever/resource-usage/',formatDateTime(substring(item().name,0,10),'yyyy-MM-ddTHHmm_ss'),'/')",
+														"type": "Expression"
+													}
+												}
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		],
+		"variables": {
+			"stage1np_array": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-11-09T19:40:33Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

@@ -1,0 +1,21 @@
+{
+	"name": "TEST_Sftp1",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "Sftp",
+		"typeProperties": {
+			"host": "asdasd",
+			"port": 22,
+			"skipHostKeyValidation": false,
+			"hostKeyFingerprint": "dfdfd",
+			"authenticationType": "Basic",
+			"userName": "dfdffd",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlNZTkFQU0VAN0FERDk0NEEtQ0M2Qy00RTYxLTk5MTItMjVGMTQzREJCMEEwXzg3NmMyZTQyLTFiODItNDZiZi05YWZhLWQ5OGY5Y2I5NTg1NyINCn0="
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
