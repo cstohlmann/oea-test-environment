@@ -1,0 +1,542 @@
+{
+	"name": "Hackathon_work",
+	"properties": {
+		"folder": {
+			"name": "Partner Hackathon"
+		},
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "spark3p1sm",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"ecd02c4f-54b3-481b-9ebd-079a662f2f30": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "edp_course1",
+										"1": "Math - Algebra",
+										"2": "1",
+										"3": "Instruction covering Math - Algebra",
+										"4": "course1",
+										"7": "true",
+										"8": "edp_calsch1",
+										"9": "Math"
+									},
+									{
+										"0": "edp_course2",
+										"1": "Math - Geometry",
+										"2": "2",
+										"3": "Instruction covering Math - Geometry",
+										"4": "course2",
+										"7": "true",
+										"8": "edp_calsch1",
+										"9": "Math"
+									},
+									{
+										"0": "edp_course3",
+										"1": "English Language",
+										"2": "3",
+										"3": "Instruction covering English Language",
+										"4": "course3",
+										"7": "true",
+										"8": "edp_calsch1",
+										"9": "Math"
+									},
+									{
+										"0": "edp_course4",
+										"1": "History - World History",
+										"2": "4",
+										"3": "Instruction covering History - World History",
+										"4": "course4",
+										"7": "true",
+										"8": "edp_calsch1",
+										"9": "Math"
+									},
+									{
+										"0": "edp_course5",
+										"1": "Science Biology",
+										"2": "5",
+										"3": "Instruction covering Science Biology",
+										"4": "course5",
+										"7": "true",
+										"8": "edp_calsch1",
+										"9": "Math"
+									},
+									{
+										"0": "edp_course6",
+										"1": "Health",
+										"2": "6",
+										"3": "Instruction covering Health",
+										"4": "course6",
+										"7": "true",
+										"8": "edp_calsch1",
+										"9": "Math"
+									},
+									{
+										"0": "edp_course7",
+										"1": "Technology - Programming",
+										"2": "7",
+										"3": "Instruction covering Technology - Programming",
+										"4": "course7",
+										"7": "true",
+										"8": "edp_calsch1",
+										"9": "Math"
+									},
+									{
+										"0": "edp_course8",
+										"1": "Physical Education",
+										"2": "8",
+										"3": "Instruction covering Physical Education",
+										"4": "course8",
+										"7": "true",
+										"8": "edp_calsch1",
+										"9": "Math"
+									},
+									{
+										"0": "edp_course9",
+										"1": "Art",
+										"2": "9",
+										"3": "Instruction covering Art",
+										"4": "course9",
+										"7": "true",
+										"8": "edp_calsch1",
+										"9": "Math"
+									},
+									{
+										"0": "edp_course10",
+										"1": "Music",
+										"2": "10",
+										"3": "Instruction covering Music",
+										"4": "course10",
+										"7": "true",
+										"8": "edp_calsch1",
+										"9": "Math"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Id",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "Name",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "Code",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "Description",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "ExternalId",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "CreateDate",
+										"type": "timestamp"
+									},
+									{
+										"key": "6",
+										"name": "LastModifiedDate",
+										"type": "timestamp"
+									},
+									{
+										"key": "7",
+										"name": "IsActive",
+										"type": "boolean"
+									},
+									{
+										"key": "8",
+										"name": "CalendarId",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "Department",
+										"type": "string"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/7b9a4896-4541-483f-bdc7-d8f4ec6be3ee/resourceGroups/rg-oea-hybriddev2/providers/Microsoft.Synapse/workspaces/syn-oea-hybriddev2/bigDataPools/spark3p1sm",
+				"name": "spark3p1sm",
+				"type": "Spark",
+				"endpoint": "https://syn-oea-hybriddev2.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/spark3p1sm",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "3.1",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# OEA Partner Hackathon Notebook"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"%run /OEA_py"
+				],
+				"attachments": null,
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"%run /Hackathon_example_modules_py"
+				],
+				"attachments": null,
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"oea = OEA()\r\n",
+					"m365 = M365(oea)\r\n",
+					"contoso_sis = ContosoSIS(oea, 'contoso_sis', False)"
+				],
+				"attachments": null,
+				"execution_count": 4
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"contoso_sis.copy_test_data_to_stage1()\r\n",
+					"m365.copy_test_data_to_stage1()"
+				],
+				"attachments": null,
+				"execution_count": 6
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"contoso_sis.process_data_from_stage1()\r\n",
+					"m365.process_roster_data_from_stage1()\r\n",
+					"m365.process_activity_data_from_stage1()"
+				],
+				"attachments": null,
+				"execution_count": 7
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"### These next code blocks are taken from the ContosoSIS example for data prep\r\n",
+					"\r\n",
+					"Intention was to prep the data in an alternative way, but became too busy working on Graph Reports API module; please accept this as is. \r\n",
+					"\r\n",
+					"Original work provided via PowerBI dashboard."
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"# 3) Run additional prep on the data to create a unified dataset that can be used in a Power BI report\r\n",
+					"\r\n",
+					"# Process sectionmark data. Convert id values to use the Person.Id and Section.Id values set in the m365 data.\r\n",
+					"sqlContext.registerDataFrameAsTable(spark.read.format('parquet').load(oea.stage2np + '/contoso_sis/studentsectionmark'), 'SectionMark')\r\n",
+					"#sqlContext.registerDataFrameAsTable(spark.read.format('parquet').load(oea.stage2np + '/contoso_sis/studentdemographics'), 'Demographics')\r\n",
+					"sqlContext.registerDataFrameAsTable(spark.read.format('parquet').load(oea.stage2np + '/m365/Person'), 'Person')\r\n",
+					"sqlContext.registerDataFrameAsTable(spark.read.format('parquet').load(oea.stage2np + '/m365/Section'), 'Section')\r\n",
+					"df = spark.sql(\"select sm.id Id, p.Id PersonId, s.Id SectionId, cast(sm.numeric_grade_earned as int) NumericGrade, \\\r\n",
+					"sm.alpha_grade_earned AlphaGrade, sm.is_final_grade IsFinalGrade, cast(sm.credits_attempted as int) CreditsAttempted, cast(sm.credits_earned as int) CreditsEarned, \\\r\n",
+					"sm.grad_credit_type GraduationCreditType, sm.id ExternalId, CURRENT_TIMESTAMP CreateDate, CURRENT_TIMESTAMP LastModifiedDate, true IsActive \\\r\n",
+					"from SectionMark sm, Person p, Section s \\\r\n",
+					"where sm.student_id = p.ExternalId \\\r\n",
+					"and sm.section_id = s.ExternalId\")\r\n",
+					"df.write.format('parquet').mode('overwrite').save(oea.stage2np + '/ContosoISD/SectionMark')\r\n",
+					"\r\n",
+					"# Repeat the above process, this time for student attendance\r\n",
+					"# Convert id values to use the Person.Id, Org.Id and Section.Id values\r\n",
+					"sqlContext.registerDataFrameAsTable(spark.read.format('parquet').load(oea.stage2np + '/contoso_sis/studentattendance'), 'Attendance')\r\n",
+					"sqlContext.registerDataFrameAsTable(spark.read.format('parquet').load(oea.stage2np + '/m365/Org'), 'Org')\r\n",
+					"df = spark.sql(\"select att.id Id, p.Id PersonId, att.school_year SchoolYear, o.Id OrgId, to_date(att.attendance_date,'MM/dd/yyyy') AttendanceDate, \\\r\n",
+					"att.all_day AllDay, att.Period Period, s.Id SectionId, att.AttendanceCode AttendanceCode, att.PresenceFlag PresenceFlag, \\\r\n",
+					"att.attendance_status AttendanceStatus, att.attendance_type AttendanceType, att.attendance_sequence AttendanceSequence \\\r\n",
+					"from Attendance att, Org o, Person p, Section s \\\r\n",
+					"where att.student_id = p.ExternalId \\\r\n",
+					"and att.school_id = o.ExternalId \\\r\n",
+					"and att.section_id = s.ExternalId\")\r\n",
+					"df.write.format('parquet').mode('overwrite').save(oea.stage2np +'/ContosoISD/Attendance')\r\n",
+					"\r\n",
+					"# Add 'Department' column to Course (hardcoded to \"Math\" for this Contoso example)\r\n",
+					"sqlContext.registerDataFrameAsTable(spark.read.format('parquet').load(oea.stage2np + '/m365/Course'), 'Course')\r\n",
+					"df = spark.sql(\"select Id, Name, Code, Description, ExternalId, CreateDate, LastModifiedDate, IsActive, CalendarId, 'Math' Department from Course\")\r\n",
+					"df.write.format('parquet').mode('overwrite').save(oea.stage2np + '/ContosoISD/Course')\r\n",
+					""
+				],
+				"attachments": null,
+				"execution_count": 8
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"# Was going to do some convoluted method, but due to time constraint(s) - finished PowerBI dashboard instead\r\n",
+					"\r\n",
+					"#sqlContext.registerDataFrameAsTable(spark.read.format('parquet').load(oea.stage2np + '/contoso_sis/studentdemographics'), 'Demographics')\r\n",
+					"#sqlContext.registerDataFrameAsTable(spark.read.format('parquet').load(oea.stage2np + '/m365/Person'), 'Person')\r\n",
+					"#df = spark.sql(\"select sis_id SISId, federal_race_category RaceCategory, primary_language PrimaryLanguage, ell_status ELLStatus, special_education SpecialEducation, low_income LowIncome, \\\r\n",
+					"#from Demographics\")\r\n",
+					"#display(df.limit(10))\r\n",
+					"#df.write.format('parquet').mode('overwrite').save(oea.stage2np + '/ContosoISD/Demographics')"
+				],
+				"attachments": null,
+				"execution_count": 12
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"contoso_sis.create_stage2_db('PARQUET')\r\n",
+					"m365.create_stage2_db('PARQUET')\r\n",
+					"\r\n",
+					"spark.sql('CREATE DATABASE IF NOT EXISTS s2_ContosoISD')\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.Activity using PARQUET location '\" + oea.stage2np + \"/m365/TechActivity'\")\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.Calendar using PARQUET location '\" + oea.stage2np + \"/m365/Calendar'\")\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.Org using PARQUET location '\" + oea.stage2np + \"/m365/Org'\")\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.Person using PARQUET location '\" + oea.stage2np + \"/m365/Person'\")\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.PersonIdentifier using PARQUET location '\" + oea.stage2np + \"/m365/PersonIdentifier'\")\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.RefDefinition using PARQUET location '\" + oea.stage2np + \"/m365/RefDefinition'\")\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.Section using PARQUET location '\" + oea.stage2np + \"/m365/Section'\")\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.Session using PARQUET location '\" + oea.stage2np + \"/m365/Session'\")\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.StaffOrgAffiliation using PARQUET location '\" + oea.stage2np + \"/m365/StaffOrgAffiliation'\")\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.StaffSectionMembership using PARQUET location '\" + oea.stage2np + \"/m365/StaffSectionMembership'\")\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.StudentOrgAffiliation using PARQUET location '\" + oea.stage2np + \"/m365/StudentOrgAffiliation'\")\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.StudentSectionMembership using PARQUET location '\" + oea.stage2np + \"/m365/StudentSectionMembership'\")\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.Course using PARQUET location '\" + oea.stage2np + \"/ContosoISD/Course'\")\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.Attendance using PARQUET location '\" + oea.stage2np + \"/ContosoISD/Attendance'\")\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.SectionMark using PARQUET location '\" + oea.stage2np + \"/ContosoISD/SectionMark'\")\r\n",
+					"spark.sql(\"create table if not exists s2_ContosoISD.Demographics using PARQUET location '\" + oea.stage2np + \"/contoso_sis/studentdemographics'\")\r\n",
+					"\r\n",
+					"print(f\"Created spark db's.\\nYou can now open the 'pbix' dashboard submitted\")"
+				],
+				"attachments": null,
+				"execution_count": 13
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Reset everything\r\n",
+					"You can uncomment line 11 in the cell below and run the cell to reset everything and walk through the process again from the top.\r\n",
+					"\r\n",
+					"Note: remember to comment out line 11 again to prevent accidental resetting of the example"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"def reset_all_processing():\r\n",
+					"    contoso_sis.delete_all_stages()\r\n",
+					"    m365.delete_all_stages()\r\n",
+					"    oea.rm_if_exists(oea.stage2np + '/ContosoISD')\r\n",
+					"\r\n",
+					"    oea.drop_db('s2_contoso_sis')\r\n",
+					"    oea.drop_db('s2_contosoisd')\r\n",
+					"    oea.drop_db('s2_m365')\r\n",
+					"\r\n",
+					"# Uncomment the following line and run this cell to reset everything if you want to walk through the process again.\r\n",
+					"#reset_all_processing()"
+				],
+				"attachments": null,
+				"execution_count": 5
+			}
+		]
+	}
+}

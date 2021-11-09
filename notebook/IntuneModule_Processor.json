@@ -1,0 +1,729 @@
+{
+	"name": "IntuneModule_Processor",
+	"properties": {
+		"folder": {
+			"name": "Internal Hackathon"
+		},
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "39baf1ba-330a-4bf6-95f5-79498ee374a5"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"c1413433-b978-491e-8c68-1251e53df797": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "DESKTOP-M5HCKFC",
+										"1": "Intune",
+										"2": "Corporate",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21692.1000",
+										"6": "2021-06-01 14:19:07.173309",
+										"7": "debrasmith1@contosoisd3.onmicrosoft.com",
+										"8": "8feeb0b7-7e88-4ca2-9a12-9a79b604010e"
+									},
+									{
+										"0": "DESKTOP-KQOEDOR",
+										"1": "Intune",
+										"2": "Corporate",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.100",
+										"6": "2021-08-05 18:09:59.131456",
+										"7": "f9270f4e-b8b3-43a8-a544-6dd4552b82f6",
+										"8": "5662e819-1ade-4de8-b013-155e8a9a2f0f"
+									},
+									{
+										"0": "DESKTOP-O1BG8QB",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21380.1",
+										"6": "2021-07-19 20:53:28.008167",
+										"7": "jennifermayer2@contosoisd3.onmicrosoft.com",
+										"8": "e911c8bc-31ac-4096-926b-d15a70bd5bd9"
+									},
+									{
+										"0": "HARLEYH-SVEDU",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21990.1",
+										"6": "2021-06-03 06:48:05.791148",
+										"7": "29e821a4-c748-43e3-9ba1-621582283d15",
+										"8": "5318350b-d4e6-41ca-ba0c-3656cf85ec53"
+									},
+									{
+										"0": "cacarras_Windows_7/22/2021_11:10 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-07-23 00:58:12",
+										"7": "abigaillong3@contosoisd3.onmicrosoft.com",
+										"8": "20a894d2-0cdb-4a46-87e9-88f371f112a9"
+									},
+									{
+										"0": "DESKTOP-NJNOAB6",
+										"1": "Intune",
+										"2": "Corporate",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21382.1",
+										"6": "2021-05-14 10:01:08",
+										"7": "e8e5b461-7589-482b-9a70-2cfa93ea5c4e",
+										"8": "88787e75-b837-4ad7-a190-4de321eece4f"
+									},
+									{
+										"0": "FLUBBERGHASTED",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.194",
+										"6": "2021-10-10 15:28:00",
+										"7": "josephkelley4@contosoisd3.onmicrosoft.com",
+										"8": "5267644d-7869-4a29-b340-76695311129b"
+									},
+									{
+										"0": "adbr_Windows_10/1/2021_11:16 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Not Evaluated",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-10-02 00:34:02",
+										"7": "89d9bf02-0067-4ba8-9898-90086a17b9af",
+										"8": "16552338-ad38-49bf-be03-61cc545360e1"
+									},
+									{
+										"0": "BEAU-LNVO-N23",
+										"1": "Intune",
+										"2": "Corporate",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.65",
+										"6": "2021-07-12 20:06:52",
+										"7": "amberbuchanan5@contosoisd3.onmicrosoft.com",
+										"8": "4dc2feb4-79ba-4d15-a3ad-8c7efdacbc8b"
+									},
+									{
+										"0": "TapValidation_Windows_9/21/2021_6:07 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-09-21 18:07:48",
+										"7": "2f429ce5-9ff3-478f-8c1b-0c3e1c07724e",
+										"8": "5c21ded0-959c-49a1-bed2-263f25ef1f30"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "DeviceName",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "ManagedBy",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "Ownership",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "Compliance",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "OS",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "OSVersion",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "LastCheckIn",
+										"type": "timestamp"
+									},
+									{
+										"key": "7",
+										"name": "PrimaryUserUPN",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "DeviceID",
+										"type": "string"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"5c886ad4-b3b8-4adb-ad24-330bf6226fb9": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "DESKTOP-M5HCKFC",
+										"1": "Intune",
+										"2": "Corporate",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21692.1000",
+										"6": "2021-06-01 14:19:07.173309",
+										"7": "debrasmith1@contosoisd3.onmicrosoft.com",
+										"8": "8feeb0b7-7e88-4ca2-9a12-9a79b604010e",
+										"9": "14",
+										"10": "Tue",
+										"11": "false"
+									},
+									{
+										"0": "DESKTOP-KQOEDOR",
+										"1": "Intune",
+										"2": "Corporate",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.100",
+										"6": "2021-08-05 18:09:59.131456",
+										"7": "f9270f4e-b8b3-43a8-a544-6dd4552b82f6",
+										"8": "5662e819-1ade-4de8-b013-155e8a9a2f0f",
+										"9": "18",
+										"10": "Thu",
+										"11": "true"
+									},
+									{
+										"0": "DESKTOP-O1BG8QB",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21380.1",
+										"6": "2021-07-19 20:53:28.008167",
+										"7": "jennifermayer2@contosoisd3.onmicrosoft.com",
+										"8": "e911c8bc-31ac-4096-926b-d15a70bd5bd9",
+										"9": "20",
+										"10": "Mon",
+										"11": "true"
+									},
+									{
+										"0": "HARLEYH-SVEDU",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21990.1",
+										"6": "2021-06-03 06:48:05.791148",
+										"7": "29e821a4-c748-43e3-9ba1-621582283d15",
+										"8": "5318350b-d4e6-41ca-ba0c-3656cf85ec53",
+										"9": "06",
+										"10": "Thu",
+										"11": "true"
+									},
+									{
+										"0": "cacarras_Windows_7/22/2021_11:10 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-07-23 00:58:12",
+										"7": "abigaillong3@contosoisd3.onmicrosoft.com",
+										"8": "20a894d2-0cdb-4a46-87e9-88f371f112a9",
+										"9": "00",
+										"10": "Fri",
+										"11": "true"
+									},
+									{
+										"0": "DESKTOP-NJNOAB6",
+										"1": "Intune",
+										"2": "Corporate",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21382.1",
+										"6": "2021-05-14 10:01:08",
+										"7": "e8e5b461-7589-482b-9a70-2cfa93ea5c4e",
+										"8": "88787e75-b837-4ad7-a190-4de321eece4f",
+										"9": "10",
+										"10": "Fri",
+										"11": "false"
+									},
+									{
+										"0": "FLUBBERGHASTED",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.194",
+										"6": "2021-10-10 15:28:00",
+										"7": "josephkelley4@contosoisd3.onmicrosoft.com",
+										"8": "5267644d-7869-4a29-b340-76695311129b",
+										"9": "15",
+										"10": "Sun",
+										"11": "true"
+									},
+									{
+										"0": "adbr_Windows_10/1/2021_11:16 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Not Evaluated",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-10-02 00:34:02",
+										"7": "89d9bf02-0067-4ba8-9898-90086a17b9af",
+										"8": "16552338-ad38-49bf-be03-61cc545360e1",
+										"9": "00",
+										"10": "Sat",
+										"11": "true"
+									},
+									{
+										"0": "BEAU-LNVO-N23",
+										"1": "Intune",
+										"2": "Corporate",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.65",
+										"6": "2021-07-12 20:06:52",
+										"7": "amberbuchanan5@contosoisd3.onmicrosoft.com",
+										"8": "4dc2feb4-79ba-4d15-a3ad-8c7efdacbc8b",
+										"9": "20",
+										"10": "Mon",
+										"11": "true"
+									},
+									{
+										"0": "TapValidation_Windows_9/21/2021_6:07 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-09-21 18:07:48",
+										"7": "2f429ce5-9ff3-478f-8c1b-0c3e1c07724e",
+										"8": "5c21ded0-959c-49a1-bed2-263f25ef1f30",
+										"9": "18",
+										"10": "Tue",
+										"11": "true"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "DeviceName",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "ManagedBy",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "Ownership",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "Compliance",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "OS",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "OSVersion",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "LastCheckIn",
+										"type": "timestamp"
+									},
+									{
+										"key": "7",
+										"name": "PrimaryUserUPN",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "DeviceID",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "lastCheckInHourOfDay",
+										"type": "string"
+									},
+									{
+										"key": "10",
+										"name": "lastCheckInDayOfWeek",
+										"type": "string"
+									},
+									{
+										"key": "11",
+										"name": "accessOutsideOfSchool",
+										"type": "string"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Intune Module Processing Notebook\r\n",
+					"\r\n",
+					"(Christian Stohlmann)\r\n",
+					"\r\n",
+					"Takes only the stage2np data from the generated intune_devices and:\r\n",
+					" - Creates a separate db for the Intune Module (s2p_intune_module)\r\n",
+					" - Splits the last check in time (lastCheckInDayOfWeek and lastCheckInHourOfDay)\r\n",
+					" - Hashes the column with the UPNs"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DoubleType, ArrayType\r\n",
+					"from pyspark.sql.functions import *\r\n",
+					"from pyspark.sql.window import Window\r\n",
+					"from faker import Faker\r\n",
+					"import datetime\r\n",
+					"\r\n",
+					"# data lake and container information\r\n",
+					"storage_account = 'stoehybriddev2'\r\n",
+					"use_test_env = False\r\n",
+					"\r\n",
+					"if use_test_env:\r\n",
+					"    stage1np = 'abfss://test-env@' + storage_account + '.dfs.core.windows.net/stage1np'\r\n",
+					"    stage2np = 'abfss://test-env@' + storage_account + '.dfs.core.windows.net/stage2np'\r\n",
+					"    stage2p = 'abfss://test-env@' + storage_account + '.dfs.core.windows.net/stage2p'\r\n",
+					"else:\r\n",
+					"    stage1np = 'abfss://stage1np@' + storage_account + '.dfs.core.windows.net'\r\n",
+					"    stage2np = 'abfss://stage2np@' + storage_account + '.dfs.core.windows.net'\r\n",
+					"    stage2p = 'abfss://stage2p@' + storage_account + '.dfs.core.windows.net'"
+				],
+				"attachments": null,
+				"execution_count": 66
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"dfIntuneDevices = spark.read.format('parquet').load(f'{stage2np}/m365/intune/devices/*.parquet', header='true')"
+				],
+				"attachments": null,
+				"execution_count": 77
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(dfIntuneDevices.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 78
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"dfIntuneDevices.printSchema()"
+				],
+				"attachments": null,
+				"execution_count": 79
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"dfIntuneDevices = dfIntuneDevices.withColumn('lastCheckInTime', split(col('lastCheckIn'), ' ').getItem(1))\r\n",
+					"dfIntuneDevices = dfIntuneDevices.withColumn('lastCheckInHourOfDay', split(col('lastCheckInTime'), ':').getItem(0))\r\n",
+					"dfIntuneDevices = dfIntuneDevices.drop('lastCheckInTime')\r\n",
+					"\r\n",
+					"dfIntuneDevices = dfIntuneDevices.withColumn('lastCheckInDayOfWeek', date_format(col('lastCheckIn'), \"E\"))\r\n",
+					"\r\n",
+					"# Can uncomment the drop if you want to drop these two columns\r\n",
+					"dfIntuneDevices = dfIntuneDevices.withColumn('accessOutsideOfSchool', when(col('lastCheckInDayOfWeek') == \"Sat\", \"true\").otherwise(when(col('lastCheckInDayOfWeek') == \"Sun\", \"true\").otherwise(when(col('lastCheckInHourOfDay') > 15, \"true\").otherwise(when(col('lastCheckInHourOfDay') < 9, \"true\").otherwise(\"false\")))))\r\n",
+					"#dfIntuneDevices = dfIntuneDevices.drop('lastCheckInDayOfWeek').drop('lastCheckInHourOfDay')\r\n",
+					"\r\n",
+					"display(dfIntuneDevices.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 80
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"dfIntuneDevices.coalesce(1).write.format('parquet').mode('overwrite').save(stage2np + '/m365/intune_module/devices')"
+				],
+				"attachments": null,
+				"execution_count": 54
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Now run the pseudonymization of the UPNs via OEA schema"
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"%run /OEA_py"
+				],
+				"attachments": null,
+				"execution_count": 72
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"oea = OEA()"
+				],
+				"attachments": null,
+				"execution_count": 73
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"devicesSchema = [['DeviceName', 'string', 'no-op'],\r\n",
+					"                            ['ManagedBy', 'string', 'no-op'],\r\n",
+					"                            ['Ownership', 'string', 'no-op'],\r\n",
+					"                            ['Compliance','string','no-op'],\r\n",
+					"                            ['OS', 'string', 'no-op'],\r\n",
+					"                            ['OSVersion', 'string', 'no-op'],\r\n",
+					"                            ['LastCheckIn', 'timestamp', 'no-op'],\r\n",
+					"                            ['PrimaryUserUPN', 'string', 'hash'],\r\n",
+					"                            ['DeviceID', 'string', 'no-op'],\r\n",
+					"                            ['lastCheckInHourOfDay', 'integer', 'no-op'],\r\n",
+					"                            ['lastCheckInDayOfWeek', 'string', 'no-op'],\r\n",
+					"                            ['accessOutsideOfSchool', 'integer', 'no-op']]\r\n",
+					"\r\n",
+					"df_pseudo, df_lookup = oea.pseudonymize(dfIntuneDevices, devicesSchema)\r\n",
+					"\r\n",
+					"df_pseudo.coalesce(1).write.format('parquet').mode('overwrite').save(stage2p + '/m365/intune_module/devices')\r\n",
+					""
+				],
+				"attachments": null,
+				"execution_count": 81
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"def create_spark_db(db_name, source_path):\r\n",
+					"    spark.sql(f'CREATE DATABASE IF NOT EXISTS {db_name}')\r\n",
+					"    spark.sql(f\"DROP TABLE IF EXISTS {db_name}.devices\")\r\n",
+					"    spark.sql(f\"create table if not exists {db_name}.devices using PARQUET location '{source_path}'\")\r\n",
+					"    \r\n",
+					"create_spark_db('s2p_intune_module', stage2p + '/m365/intune_module/devices')"
+				],
+				"attachments": null,
+				"execution_count": 83
+			}
+		]
+	}
+}

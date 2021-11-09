@@ -1,0 +1,21 @@
+{
+	"name": "Graph API",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://graph.microsoft.com/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "AadServicePrincipal",
+			"servicePrincipalId": "a591da39-50a9-4d66-b0db-9697e40d9d6c",
+			"tenant": "178ab4db-1ad5-49ad-86a7-06a29409af8a",
+			"aadResourceId": "https://graph.microsoft.com/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlNZTi1PRUEtSFlCUklEREVWMl8zN2U0MWJiZi0zZjMwLTRiNzMtOTFlNC0zMTA1NzYzYmQ2ZGUiDQp9"
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

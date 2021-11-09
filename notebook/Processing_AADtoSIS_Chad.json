@@ -1,0 +1,224 @@
+{
+	"name": "Processing_AADtoSIS_Chad",
+	"properties": {
+		"folder": {
+			"name": "Internal Hackathon"
+		},
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "spark3p1sm",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 4,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "4",
+				"spark.dynamicAllocation.maxExecutors": "4"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1"
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/7b9a4896-4541-483f-bdc7-d8f4ec6be3ee/resourceGroups/rg-oea-hybriddev2/providers/Microsoft.Synapse/workspaces/syn-oea-hybriddev2/bigDataPools/spark3p1sm",
+				"name": "spark3p1sm",
+				"type": "Spark",
+				"endpoint": "https://syn-oea-hybriddev2.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/spark3p1sm",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "3.1",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"from pyspark.sql.functions import *\r\n",
+					"from pyspark.sql.window import Window\r\n",
+					"from faker import Faker\r\n",
+					"import datetime\r\n",
+					"\r\n",
+					"# data lake and container information\r\n",
+					"storage_account = 'stoeahybriddev2'\r\n",
+					"use_test_env = False\r\n",
+					"\r\n",
+					"if use_test_env:\r\n",
+					"    stage1np = 'abfss://test-env@' + storage_account + '.dfs.core.windows.net/stage1np'\r\n",
+					"    stage2np = 'abfss://test-env@' + storage_account + '.dfs.core.windows.net/stage2np'\r\n",
+					"    stage2p = 'abfss://test-env@' + storage_account + '.dfs.core.windows.net/stage2p'\r\n",
+					"else:\r\n",
+					"    stage1np = 'abfss://stage1np@' + storage_account + '.dfs.core.windows.net'\r\n",
+					"    stage2np = 'abfss://stage2np@' + storage_account + '.dfs.core.windows.net'\r\n",
+					"    stage2p = 'abfss://stage2p@' + storage_account + '.dfs.core.windows.net'"
+				],
+				"attachments": null,
+				"execution_count": 4
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"dfUsersRaw = spark.read.format('csv').load(f'{stage1np}/m365/AAD/users/users.csv', header='true')\r\n",
+					"dfPersonIdentifierRaw = spark.read.format('csv').load(f'{stage1np}/m365/DIPData/Roster/PersonIdentifier.csv', header='false')\r\n",
+					"dfPersonRaw = spark.read.format('csv').load(f'{stage1np}/m365/DIPData/Roster/Person.csv', header='false')"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(dfUsersRaw.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(dfPersonIdentifierRaw.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Method for extracting the data in \"PersonIdentifier.csv\" and allocating to \"userPrincipalName\" and \"id\" (both located within _c1 above).\r\n",
+					"num_of_new_users = dfPersonRaw.count()\r\n",
+					"users = dfUsersRaw.select('userPrincipalName').collect()\r\n",
+					"ids = dfUsersRaw.select('id').collect()\r\n",
+					"\r\n",
+					"usersSchema = StructType(fields=[\r\n",
+					"    StructField('givenName', StringType(), False),\r\n",
+					"    StructField('surname', StringType(), False),\r\n",
+					"    StructField('userPrincipalName', StringType(), False),\r\n",
+					"    StructField('id', StringType(), False)\r\n",
+					"    ])\r\n",
+					"\r\n",
+					"#dfUsersGen = spark.createDataFrame([], usersSchema)\r\n",
+					"\r\n",
+					"for n in range(num_of_new_users):\r\n",
+					"    if dfPersonIdentifierRaw.select('_c0') == \"edp_pi1_st\" + [n]:\r\n",
+					"        users[n][0] = dfPersonIdentifierRaw.select('_c1')\r\n",
+					"    else: \r\n",
+					"        ids[0][n] = dfPersonIdentifierRaw.select('_c1')\r\n",
+					"\r\n",
+					"#dfNewUsers = dfUsersRaw.withColumn('userPrincipalName', \r\n",
+					"#if dfPersonIdentifierRaw.col('_c4') == \"pi1\":\r\n",
+					"#    dfNewUsers = dfUsersRaw.withColumn('userPrincipalName', '') = \r\n",
+					"#else: \r\n",
+					"\r\n",
+					""
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Method for extracting the data in \"Person.csv\" and allocating to \"givenName\" and \"surname\""
+				],
+				"attachments": null,
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"dfNewUsers.write.format(\"org.apache.spark.sql.csv\").mode(\"overwrite\").save(stage1np + '/m365/AAD/users/newUsers.csv')"
+				],
+				"attachments": null,
+				"execution_count": null
+			}
+		]
+	}
+}

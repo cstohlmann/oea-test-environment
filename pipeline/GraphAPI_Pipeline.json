@@ -1,0 +1,177 @@
+{
+	"name": "GraphAPI_Pipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "Get_userData_from_GraphAPI",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "RestSource",
+						"httpRequestTimeout": "00:01:40",
+						"requestInterval": "00.00:00:00.010",
+						"requestMethod": "GET"
+					},
+					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "GraphAPI",
+						"type": "DatasetReference",
+						"parameters": {
+							"relativeURL": "beta/users"
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Ingested_JSON",
+						"type": "DatasetReference",
+						"parameters": {
+							"filesystem": "stage1np",
+							"directory": "GraphAPI/Users",
+							"file": {
+								"value": "users.json",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			},
+			{
+				"name": "Get_TeamsUserActivityDetails_from_GraphAPI",
+				"description": "",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "RestSource",
+						"httpRequestTimeout": "00:01:40",
+						"requestInterval": "00.00:00:00.010",
+						"requestMethod": "GET"
+					},
+					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "GraphAPI",
+						"type": "DatasetReference",
+						"parameters": {
+							"relativeURL": "beta/reports/getTeamsUserActivityUserDetail(period='D7')?$format=application/json"
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Ingested_JSON",
+						"type": "DatasetReference",
+						"parameters": {
+							"filesystem": "stage1np",
+							"directory": "GraphAPI/Teams_Activity_User_Detail",
+							"file": {
+								"value": "@concat(formatDateTime(utcnow(),'MM-dd-yyyy-hmmtt'),'.json')",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			},
+			{
+				"name": "Get_M365AppUserDetail_from_GraphAPI",
+				"description": "",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "RestSource",
+						"httpRequestTimeout": "00:01:40",
+						"requestInterval": "00.00:00:00.010",
+						"requestMethod": "GET"
+					},
+					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "GraphAPI",
+						"type": "DatasetReference",
+						"parameters": {
+							"relativeURL": "beta/reports/getM365AppUserDetail(period='D7')/content?$format=application/json"
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Ingested_JSON",
+						"type": "DatasetReference",
+						"parameters": {
+							"filesystem": "stage1np",
+							"directory": "GraphAPI/M365_App_User_Detail",
+							"file": {
+								"value": "@concat(formatDateTime(utcnow(),'MM-dd-yyyy-hmmtt'),'.json')",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			}
+		],
+		"folder": {
+			"name": "Graph API"
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-11-08T19:36:27Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

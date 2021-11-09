@@ -1,0 +1,310 @@
+{
+	"name": "OEA_IntuneDevices_data_ingestion",
+	"properties": {
+		"activities": [
+			{
+				"name": "DownloadCSVFromURL",
+				"description": "Copies the Devices data from Intune Reports via Graph API",
+				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "Set FinalURL",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "@{'beta/deviceManagement/reports/exportJobs'}"
+					},
+					{
+						"name": "Destination",
+						"value": "@{'stage1np'}/@{'intune_test/devices'}/@{concat(formatDateTime(utcnow(),'MM-dd-yyyy-hmmtt'),'.csv')}"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "BinarySource",
+						"storeSettings": {
+							"type": "HttpReadSettings",
+							"requestMethod": "GET",
+							"requestTimeout": ""
+						},
+						"formatSettings": {
+							"type": "BinaryReadSettings",
+							"compressionProperties": {
+								"type": "ZipDeflateReadSettings"
+							}
+						}
+					},
+					"sink": {
+						"type": "BinarySink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "DS_HTTP_binary_zip",
+						"type": "DatasetReference",
+						"parameters": {
+							"URL": {
+								"value": "@variables('FinalURL')",
+								"type": "Expression"
+							}
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DS_ADLS_binary",
+						"type": "DatasetReference",
+						"parameters": {
+							"filesystem": "stage1np",
+							"directory": "intune/devices",
+							"file": {
+								"value": "@concat(formatDateTime(utcnow(),'MM-dd-yyyy-hmmtt'),'.csv')",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			},
+			{
+				"name": "SubmitPOSTRequest",
+				"description": "Submits the POST request of Intune Devices data to Graph API. \nNOTE: If you wish to change the data being pulled from the POST request, you can edit this within the \"Body\" under Settings.",
+				"type": "WebActivity",
+				"dependsOn": [
+					{
+						"activity": "GetBearerToken",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": {
+						"value": "https://graph.microsoft.com/beta/deviceManagement/reports/exportJobs",
+						"type": "Expression"
+					},
+					"connectVia": {
+						"referenceName": "AutoResolveIntegrationRuntime",
+						"type": "IntegrationRuntimeReference"
+					},
+					"method": "POST",
+					"headers": {
+						"Content-Type": "application/json",
+						"Authorization": {
+							"value": "@concat('Bearer ',activity('GetBearerToken').output.access_token)",
+							"type": "Expression"
+						}
+					},
+					"body": {
+						"value": "{ \n    \"reportName\": \"Devices\", \n    \"select\": [ \n        \"DeviceName\", \n        \"ManagedBy\",\n        \"OwnerType\", \n        \"ComplianceState\", \n        \"OS\",\n        \"OSVersion\",\n        \"LastContact\",\n        \"UPN\", \n        \"DeviceId\"\n    ]\n} ",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Set POSTRequestID",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "SubmitPOSTRequest",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "POSTRequestID",
+					"value": {
+						"value": "@activity('SubmitPOSTRequest').output.id",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Until POST Request Status is Complete",
+				"description": "Submits a GET request to the appended graph URL with the POST ID information, until the status of the GET request is \"completed\".",
+				"type": "Until",
+				"dependsOn": [
+					{
+						"activity": "Set POSTRequestID",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "@equals(variables('POSTRequestStatus'), 'completed')",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "GETRequest_of_POSTProgress",
+							"description": "**May need to be changed**\nMight need to exclude Graph API linked service??\n - If this needs to happen, consider creating a second, new Graph API linked service where it the base URL includes the relative URL.",
+							"type": "WebActivity",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"url": {
+									"value": "@concat('https://graph.microsoft.com/beta/deviceManagement/reports/exportJobs', pipeline().parameters.BeginofIdURL, variables('POSTRequestID'), pipeline().parameters.EndofIdURL)",
+									"type": "Expression"
+								},
+								"connectVia": {
+									"referenceName": "AutoResolveIntegrationRuntime",
+									"type": "IntegrationRuntimeReference"
+								},
+								"method": "GET",
+								"headers": {
+									"Content-Type": "application/json",
+									"Authorization": {
+										"value": "@concat('Bearer ',activity('GetBearerToken').output.access_token)",
+										"type": "Expression"
+									}
+								}
+							}
+						},
+						{
+							"name": "Set POSTRequestStatus",
+							"type": "SetVariable",
+							"dependsOn": [
+								{
+									"activity": "GETRequest_of_POSTProgress",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "POSTRequestStatus",
+								"value": {
+									"value": "@activity('GETRequest_of_POSTProgress').output.status",
+									"type": "Expression"
+								}
+							}
+						}
+					],
+					"timeout": "0.00:15:00"
+				}
+			},
+			{
+				"name": "Set FinalURL",
+				"description": "Once the status of the POST is \"completed\", set the variable FinalURL (the \"url\" field from the returned GET) to be the URL where the CSV is to be downloaded from.",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Until POST Request Status is Complete",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "FinalURL",
+					"value": {
+						"value": "@activity('GETRequest_of_POSTProgress').output.url",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "GetBearerToken",
+				"description": "Use this Web activity to get bearer token",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": {
+						"value": "@concat('https://login.microsoftonline.com/', pipeline().parameters.TenantID, '/oauth2/token')",
+						"type": "Expression"
+					},
+					"connectVia": {
+						"referenceName": "AutoResolveIntegrationRuntime",
+						"type": "IntegrationRuntimeReference"
+					},
+					"method": "POST",
+					"headers": {
+						"Content-Type": "application/x-www-form-urlencoded"
+					},
+					"body": {
+						"value": "grant_type=client_credentials&client_id=@{pipeline().parameters.ClientID}&resource=https://graph.microsoft.com/&client_secret=@{pipeline().parameters.ClientSecret}",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"BeginofIdURL": {
+				"type": "string",
+				"defaultValue": "('"
+			},
+			"EndofIdURL": {
+				"type": "string",
+				"defaultValue": "')"
+			},
+			"TenantID": {
+				"type": "string"
+			},
+			"ClientID": {
+				"type": "string"
+			},
+			"ClientSecret": {
+				"type": "string"
+			}
+		},
+		"variables": {
+			"POSTRequestID": {
+				"type": "String"
+			},
+			"POSTRequestStatus": {
+				"type": "String"
+			},
+			"FinalURL": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-11-04T01:26:55Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

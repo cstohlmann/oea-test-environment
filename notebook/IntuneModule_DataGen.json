@@ -1,0 +1,3785 @@
+{
+	"name": "IntuneModule_DataGen",
+	"properties": {
+		"folder": {
+			"name": "Internal Hackathon"
+		},
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "a5f31681-d52a-47d5-87a6-754fae5ee0b9"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"8dfc3122-8911-4004-8670-464764908b5e": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "DESKTOP-M5HCKFC",
+										"1": "Intune",
+										"2": "Corporate",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21692.1000",
+										"6": "2021-06-01 14:19:07.1733099",
+										"7": "debrasmith1@contosoisd3.onmicrosoft.com",
+										"8": "8feeb0b7-7e88-4ca2-9a12-9a79b604010e"
+									},
+									{
+										"0": "DESKTOP-KQOEDOR",
+										"1": "Intune",
+										"2": "Corporate",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.100",
+										"6": "2021-08-05 18:09:59.1314562",
+										"7": "f9270f4e-b8b3-43a8-a544-6dd4552b82f6",
+										"8": "5662e819-1ade-4de8-b013-155e8a9a2f0f"
+									},
+									{
+										"0": "DESKTOP-O1BG8QB",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21380.1",
+										"6": "2021-07-19 20:53:28.0081679",
+										"7": "jennifermayer2@contosoisd3.onmicrosoft.com",
+										"8": "e911c8bc-31ac-4096-926b-d15a70bd5bd9"
+									},
+									{
+										"0": "HARLEYH-SVEDU",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21990.1",
+										"6": "2021-06-03 06:48:05.7911489",
+										"7": "29e821a4-c748-43e3-9ba1-621582283d15",
+										"8": "5318350b-d4e6-41ca-ba0c-3656cf85ec53"
+									},
+									{
+										"0": "cacarras_Windows_7/22/2021_11:10 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-07-23 00:58:12.0000000",
+										"7": "abigaillong3@contosoisd3.onmicrosoft.com",
+										"8": "20a894d2-0cdb-4a46-87e9-88f371f112a9"
+									},
+									{
+										"0": "DESKTOP-NJNOAB6",
+										"1": "Intune",
+										"2": "Corporate",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21382.1",
+										"6": "2021-05-14 10:01:08.0000000",
+										"7": "e8e5b461-7589-482b-9a70-2cfa93ea5c4e",
+										"8": "88787e75-b837-4ad7-a190-4de321eece4f"
+									},
+									{
+										"0": "FLUBBERGHASTED",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.194",
+										"6": "2021-10-10 15:28:00.0000000",
+										"7": "josephkelley4@contosoisd3.onmicrosoft.com",
+										"8": "5267644d-7869-4a29-b340-76695311129b"
+									},
+									{
+										"0": "adbr_Windows_10/1/2021_11:16 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Not Evaluated",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-10-02 00:34:02.0000000",
+										"7": "89d9bf02-0067-4ba8-9898-90086a17b9af",
+										"8": "16552338-ad38-49bf-be03-61cc545360e1"
+									},
+									{
+										"0": "BEAU-LNVO-N23",
+										"1": "Intune",
+										"2": "Corporate",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.65",
+										"6": "2021-07-12 20:06:52.0000000",
+										"7": "amberbuchanan5@contosoisd3.onmicrosoft.com",
+										"8": "4dc2feb4-79ba-4d15-a3ad-8c7efdacbc8b"
+									},
+									{
+										"0": "TapValidation_Windows_9/21/2021_6:07 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-09-21 18:07:48.0000000",
+										"7": "2f429ce5-9ff3-478f-8c1b-0c3e1c07724e",
+										"8": "5c21ded0-959c-49a1-bed2-263f25ef1f30"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "DeviceName",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "ManagedBy",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "Ownership",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "Compliance",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "OS",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "OSVersion",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "LastCheckIn",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "PrimaryUserUPN",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "DeviceID",
+										"type": "string"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"c71ab5af-82bc-434d-91a5-1c8ad32b5094": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "Debra",
+										"1": "Smith",
+										"2": "debrasmith1@contosoisd3.onmicrosoft.com",
+										"3": "f9270f4e-b8b3-43a8-a544-6dd4552b82f6"
+									},
+									{
+										"0": "Jennifer",
+										"1": "Mayer",
+										"2": "jennifermayer2@contosoisd3.onmicrosoft.com",
+										"3": "29e821a4-c748-43e3-9ba1-621582283d15"
+									},
+									{
+										"0": "Abigail",
+										"1": "Long",
+										"2": "abigaillong3@contosoisd3.onmicrosoft.com",
+										"3": "e8e5b461-7589-482b-9a70-2cfa93ea5c4e"
+									},
+									{
+										"0": "Joseph",
+										"1": "Kelley",
+										"2": "josephkelley4@contosoisd3.onmicrosoft.com",
+										"3": "89d9bf02-0067-4ba8-9898-90086a17b9af"
+									},
+									{
+										"0": "Amber",
+										"1": "Buchanan",
+										"2": "amberbuchanan5@contosoisd3.onmicrosoft.com",
+										"3": "2f429ce5-9ff3-478f-8c1b-0c3e1c07724e"
+									},
+									{
+										"0": "Maxwell",
+										"1": "Jones",
+										"2": "maxwelljones6@contosoisd3.onmicrosoft.com",
+										"3": "0492c4f5-39b2-4c95-8554-55e8f9bddea5"
+									},
+									{
+										"0": "Ray",
+										"1": "Johnson",
+										"2": "rayjohnson7@contosoisd3.onmicrosoft.com",
+										"3": "4e6f5a94-0c25-4a03-a023-033d364e433f"
+									},
+									{
+										"0": "Chad",
+										"1": "Jones",
+										"2": "chadjones8@contosoisd3.onmicrosoft.com",
+										"3": "ac954ab5-92c9-457d-b4ac-cd781959b9ef"
+									},
+									{
+										"0": "Peggy",
+										"1": "Vargas",
+										"2": "peggyvargas9@contosoisd3.onmicrosoft.com",
+										"3": "8c31406d-eea3-4685-a115-75c2d67393d6"
+									},
+									{
+										"0": "Maurice",
+										"1": "Khan",
+										"2": "mauricekhan10@contosoisd3.onmicrosoft.com",
+										"3": "b7115c02-f44d-4e40-878f-ec459a9e994c"
+									},
+									{
+										"0": "Paige",
+										"1": "Taylor",
+										"2": "paigetaylor11@contosoisd3.onmicrosoft.com",
+										"3": "1d43d1ff-ecd1-445e-88c7-80f6907f9669"
+									},
+									{
+										"0": "Stephen",
+										"1": "Ramirez",
+										"2": "stephenramirez12@contosoisd3.onmicrosoft.com",
+										"3": "8afd2973-f863-4958-8e75-f4ba60d6c766"
+									},
+									{
+										"0": "Regina",
+										"1": "Carter",
+										"2": "reginacarter13@contosoisd3.onmicrosoft.com",
+										"3": "fade312d-c725-4d97-9e28-9761c8fea5d7"
+									},
+									{
+										"0": "Patricia",
+										"1": "Dillon",
+										"2": "patriciadillon14@contosoisd3.onmicrosoft.com",
+										"3": "e4bc6e82-9439-4746-98dd-d2efcaf078b0"
+									},
+									{
+										"0": "Sandra",
+										"1": "Sanchez",
+										"2": "sandrasanchez15@contosoisd3.onmicrosoft.com",
+										"3": "825f8542-13bd-488e-93fd-f07ccb8409d6"
+									},
+									{
+										"0": "Stacy",
+										"1": "Thompson",
+										"2": "stacythompson16@contosoisd3.onmicrosoft.com",
+										"3": "dcb284f8-b6fe-4c3a-8c6e-5973286bef29"
+									},
+									{
+										"0": "Elizabeth",
+										"1": "King",
+										"2": "elizabethking17@contosoisd3.onmicrosoft.com",
+										"3": "d4350b28-fbb4-4d14-8255-3a33237475e1"
+									},
+									{
+										"0": "Joshua",
+										"1": "Elliott",
+										"2": "joshuaelliott18@contosoisd3.onmicrosoft.com",
+										"3": "46752b5c-a745-4a6d-aaee-d19bba6cac4a"
+									},
+									{
+										"0": "Teresa",
+										"1": "Robinson",
+										"2": "teresarobinson19@contosoisd3.onmicrosoft.com",
+										"3": "f112cfd0-37b5-4bac-ad3f-ad4c40270546"
+									},
+									{
+										"0": "Ashley",
+										"1": "Todd",
+										"2": "ashleytodd20@contosoisd3.onmicrosoft.com",
+										"3": "61e1e80d-d9db-40af-b8a1-0e703db18a28"
+									},
+									{
+										"0": "Shelby",
+										"1": "Berger",
+										"2": "shelbyberger1@contosoisd3.onmicrosoft.com",
+										"3": "9b0a6817-f91c-45fd-a0a5-951807e30f11"
+									},
+									{
+										"0": "Lisa",
+										"1": "Mckee",
+										"2": "lisamckee21@contosoisd3.onmicrosoft.com",
+										"3": "8a0f4283-4e07-41d7-99a7-8b137315d969"
+									},
+									{
+										"0": "Reginald",
+										"1": "Logan",
+										"2": "reginaldlogan22@contosoisd3.onmicrosoft.com",
+										"3": "4e2a89f5-fcd2-4dad-bcd2-cf1eb64e172f"
+									},
+									{
+										"0": "Jacqueline",
+										"1": "Cole",
+										"2": "jacquelinecole23@contosoisd3.onmicrosoft.com",
+										"3": "efe6f675-c763-40af-a23c-4b2727f52fa9"
+									},
+									{
+										"0": "Ray",
+										"1": "Nelson",
+										"2": "raynelson24@contosoisd3.onmicrosoft.com",
+										"3": "714699bd-a826-45f1-9126-d71a5aece68f"
+									},
+									{
+										"0": "Andrew",
+										"1": "Hunter",
+										"2": "andrewhunter25@contosoisd3.onmicrosoft.com",
+										"3": "8e65e4cf-d0a4-40da-bf11-dc91b6a3ce92"
+									},
+									{
+										"0": "Joseph",
+										"1": "Lynch",
+										"2": "josephlynch26@contosoisd3.onmicrosoft.com",
+										"3": "bb798e9b-a03a-4915-9291-f006309d57ed"
+									},
+									{
+										"0": "Gabriel",
+										"1": "Dudley",
+										"2": "gabrieldudley27@contosoisd3.onmicrosoft.com",
+										"3": "2fcf9616-f48f-47d3-9997-e8f3edb924d8"
+									},
+									{
+										"0": "Brady",
+										"1": "Pacheco",
+										"2": "bradypacheco28@contosoisd3.onmicrosoft.com",
+										"3": "766b5e3c-489c-4aff-91f5-59af3c593e7f"
+									},
+									{
+										"0": "Amy",
+										"1": "Price",
+										"2": "amyprice29@contosoisd3.onmicrosoft.com",
+										"3": "145b5238-2146-4b6d-8111-329a61263fdd"
+									},
+									{
+										"0": "Steven",
+										"1": "Larsen",
+										"2": "stevenlarsen30@contosoisd3.onmicrosoft.com",
+										"3": "a2b73a66-a440-4dab-8285-0da8f8375d93"
+									},
+									{
+										"0": "John",
+										"1": "Brown",
+										"2": "johnbrown31@contosoisd3.onmicrosoft.com",
+										"3": "340e8462-eb2c-49d4-8f07-8f6c26a89353"
+									},
+									{
+										"0": "Melissa",
+										"1": "Phelps",
+										"2": "melissaphelps32@contosoisd3.onmicrosoft.com",
+										"3": "0ee3bdcb-625d-4dd2-9c14-f82708c0e4a2"
+									},
+									{
+										"0": "Jessica",
+										"1": "Edwards",
+										"2": "jessicaedwards33@contosoisd3.onmicrosoft.com",
+										"3": "8f036fbe-fcef-4215-8614-3e1472d837af"
+									},
+									{
+										"0": "Jennifer",
+										"1": "Davenport",
+										"2": "jenniferdavenport34@contosoisd3.onmicrosoft.com",
+										"3": "bf9e995c-bfad-4261-9346-1eb345cda949"
+									},
+									{
+										"0": "Abigail",
+										"1": "Smith",
+										"2": "abigailsmith35@contosoisd3.onmicrosoft.com",
+										"3": "c8b0da28-407d-4b94-be14-5171da64b870"
+									},
+									{
+										"0": "John",
+										"1": "Berry",
+										"2": "johnberry36@contosoisd3.onmicrosoft.com",
+										"3": "1b604336-b6f3-408a-8406-d47fae6ac89a"
+									},
+									{
+										"0": "James",
+										"1": "Jones",
+										"2": "jamesjones37@contosoisd3.onmicrosoft.com",
+										"3": "f1da2b29-e9a1-4258-8b62-ccba5dfe36f1"
+									},
+									{
+										"0": "Jacob",
+										"1": "Olson",
+										"2": "jacobolson38@contosoisd3.onmicrosoft.com",
+										"3": "1ebb3ef7-8a70-403f-8168-e969a45f419c"
+									},
+									{
+										"0": "Lydia",
+										"1": "Hunt",
+										"2": "lydiahunt39@contosoisd3.onmicrosoft.com",
+										"3": "29b87baf-f97c-4298-ba01-208bc5c32896"
+									},
+									{
+										"0": "Johnny",
+										"1": "Smith",
+										"2": "johnnysmith40@contosoisd3.onmicrosoft.com",
+										"3": "04a65e39-25f4-4356-aa4a-2ead250abf6e"
+									},
+									{
+										"0": "Wanda",
+										"1": "Cervantes",
+										"2": "wandacervantes2@contosoisd3.onmicrosoft.com",
+										"3": "06b0da21-baec-4fcf-baae-b5ed264c679b"
+									},
+									{
+										"0": "David",
+										"1": "West",
+										"2": "davidwest41@contosoisd3.onmicrosoft.com",
+										"3": "7c68d11c-dc6d-446e-964b-7be99fa16a0c"
+									},
+									{
+										"0": "Curtis",
+										"1": "Todd",
+										"2": "curtistodd42@contosoisd3.onmicrosoft.com",
+										"3": "f2242639-261b-4841-8265-c9789be629db"
+									},
+									{
+										"0": "Robert",
+										"1": "Ramirez",
+										"2": "robertramirez43@contosoisd3.onmicrosoft.com",
+										"3": "1e4fed4c-547d-4b70-bafb-f3587e652242"
+									},
+									{
+										"0": "David",
+										"1": "Taylor",
+										"2": "davidtaylor44@contosoisd3.onmicrosoft.com",
+										"3": "a02ac240-ae41-4c78-87b9-63b439798287"
+									},
+									{
+										"0": "Traci",
+										"1": "Peterson",
+										"2": "tracipeterson45@contosoisd3.onmicrosoft.com",
+										"3": "663a4f3a-ecfe-4a26-a397-c884140ca1a8"
+									},
+									{
+										"0": "Nathan",
+										"1": "Cortez",
+										"2": "nathancortez46@contosoisd3.onmicrosoft.com",
+										"3": "6b314e0b-907f-4360-b9bf-fa4687198e7a"
+									},
+									{
+										"0": "Amanda",
+										"1": "Long",
+										"2": "amandalong47@contosoisd3.onmicrosoft.com",
+										"3": "b92136b9-cdf1-4419-9804-76a68e3465e2"
+									},
+									{
+										"0": "William",
+										"1": "Carpenter",
+										"2": "williamcarpenter48@contosoisd3.onmicrosoft.com",
+										"3": "aab89a16-4b98-48d9-850e-b7aa252820d6"
+									},
+									{
+										"0": "Gloria",
+										"1": "Fowler",
+										"2": "gloriafowler49@contosoisd3.onmicrosoft.com",
+										"3": "8d103fa1-5b35-4769-8361-442e82116c71"
+									},
+									{
+										"0": "Joseph",
+										"1": "Terrell",
+										"2": "josephterrell50@contosoisd3.onmicrosoft.com",
+										"3": "c1000bea-4b3f-4d20-9bd6-a94d60556919"
+									},
+									{
+										"0": "Lisa",
+										"1": "Alexander",
+										"2": "lisaalexander51@contosoisd3.onmicrosoft.com",
+										"3": "b7728bf8-65b1-4230-acb9-e2bbf3fdfbe3"
+									},
+									{
+										"0": "Jeremy",
+										"1": "Wright",
+										"2": "jeremywright52@contosoisd3.onmicrosoft.com",
+										"3": "2ed6d44c-f0fc-4b47-9318-10bfa703caef"
+									},
+									{
+										"0": "Stephen",
+										"1": "Bennett",
+										"2": "stephenbennett53@contosoisd3.onmicrosoft.com",
+										"3": "a99343b6-57ac-48d0-add6-6631a98a6ddc"
+									},
+									{
+										"0": "John",
+										"1": "Hampton",
+										"2": "johnhampton54@contosoisd3.onmicrosoft.com",
+										"3": "8f59b481-16f5-4e48-a311-99da0c607fe9"
+									},
+									{
+										"0": "Cody",
+										"1": "Briggs",
+										"2": "codybriggs55@contosoisd3.onmicrosoft.com",
+										"3": "3362591e-cef1-4df6-a39b-57ddb2d3d8f8"
+									},
+									{
+										"0": "Tyler",
+										"1": "Ramirez",
+										"2": "tylerramirez56@contosoisd3.onmicrosoft.com",
+										"3": "8b02d636-32cb-43fa-9e51-33be899d52ea"
+									},
+									{
+										"0": "Ruben",
+										"1": "Wiggins",
+										"2": "rubenwiggins57@contosoisd3.onmicrosoft.com",
+										"3": "a9690f96-33d1-4172-8921-bef423b17de0"
+									},
+									{
+										"0": "Jennifer",
+										"1": "Sanders",
+										"2": "jennifersanders58@contosoisd3.onmicrosoft.com",
+										"3": "50cb7fc0-c800-45e4-941c-34660d541900"
+									},
+									{
+										"0": "Ernest",
+										"1": "Anderson",
+										"2": "ernestanderson59@contosoisd3.onmicrosoft.com",
+										"3": "c36a9864-fc74-4d8c-b398-63efcf019ed9"
+									},
+									{
+										"0": "Anna",
+										"1": "Alvarado",
+										"2": "annaalvarado60@contosoisd3.onmicrosoft.com",
+										"3": "d2a959a4-64d9-4b3e-b6de-d7157d0b6da5"
+									},
+									{
+										"0": "Jessica",
+										"1": "Short",
+										"2": "jessicashort3@contosoisd3.onmicrosoft.com",
+										"3": "e42ac322-2d41-4214-9c50-e95fd584b246"
+									},
+									{
+										"0": "Caitlin",
+										"1": "Peters",
+										"2": "caitlinpeters61@contosoisd3.onmicrosoft.com",
+										"3": "d8de50a0-1571-420c-a265-1af5e56efd23"
+									},
+									{
+										"0": "Amber",
+										"1": "Cook",
+										"2": "ambercook62@contosoisd3.onmicrosoft.com",
+										"3": "65a4fe7e-f81e-4cb8-812d-512f43f89eed"
+									},
+									{
+										"0": "Andrea",
+										"1": "Berry",
+										"2": "andreaberry63@contosoisd3.onmicrosoft.com",
+										"3": "dc009da5-4bc9-4fd3-ad00-4c2c56f44f81"
+									},
+									{
+										"0": "Zachary",
+										"1": "Johnson",
+										"2": "zacharyjohnson64@contosoisd3.onmicrosoft.com",
+										"3": "0e27b9d9-c80a-4928-b240-d3377555560b"
+									},
+									{
+										"0": "Michael",
+										"1": "Bryant",
+										"2": "michaelbryant65@contosoisd3.onmicrosoft.com",
+										"3": "6458ce09-532c-4735-9f12-a09d81823d60"
+									},
+									{
+										"0": "Sheryl",
+										"1": "Jones",
+										"2": "sheryljones66@contosoisd3.onmicrosoft.com",
+										"3": "cde19cd2-83a4-4773-b39d-a6e131fec1fe"
+									},
+									{
+										"0": "Troy",
+										"1": "Wilkinson",
+										"2": "troywilkinson67@contosoisd3.onmicrosoft.com",
+										"3": "c1e335a6-9ac7-440d-83c1-412d4f6c1972"
+									},
+									{
+										"0": "Brandon",
+										"1": "Ellis",
+										"2": "brandonellis68@contosoisd3.onmicrosoft.com",
+										"3": "e0c215be-96d4-41a7-8f0f-0da6569192c8"
+									},
+									{
+										"0": "Kristin",
+										"1": "Berg",
+										"2": "kristinberg69@contosoisd3.onmicrosoft.com",
+										"3": "f9196aa6-86c2-4bd1-ad59-03746ba1bb2b"
+									},
+									{
+										"0": "Steven",
+										"1": "Cline",
+										"2": "stevencline70@contosoisd3.onmicrosoft.com",
+										"3": "6fdebbf7-5eea-4539-bdf8-30f907fbdd18"
+									},
+									{
+										"0": "Angela",
+										"1": "Baxter",
+										"2": "angelabaxter71@contosoisd3.onmicrosoft.com",
+										"3": "83e60e75-98cf-4b44-9a3c-93650de0b9d4"
+									},
+									{
+										"0": "Willie",
+										"1": "Martin",
+										"2": "williemartin72@contosoisd3.onmicrosoft.com",
+										"3": "2ec3cc33-3bc7-4da8-a387-d1b5405a6b61"
+									},
+									{
+										"0": "Jason",
+										"1": "Eaton",
+										"2": "jasoneaton73@contosoisd3.onmicrosoft.com",
+										"3": "bf637293-0b09-4ed6-bb1e-c2f0266a1d83"
+									},
+									{
+										"0": "Justin",
+										"1": "Cooper",
+										"2": "justincooper74@contosoisd3.onmicrosoft.com",
+										"3": "31de54a5-c3d4-4267-8073-d07cb953cdce"
+									},
+									{
+										"0": "Mark",
+										"1": "Howard",
+										"2": "markhoward75@contosoisd3.onmicrosoft.com",
+										"3": "f5463276-6563-45ef-90de-36d75a151335"
+									},
+									{
+										"0": "Thomas",
+										"1": "Smith",
+										"2": "thomassmith76@contosoisd3.onmicrosoft.com",
+										"3": "5a6f5d99-8cca-46b3-a76d-cee06da8ec24"
+									},
+									{
+										"0": "Olivia",
+										"1": "Hendricks",
+										"2": "oliviahendricks77@contosoisd3.onmicrosoft.com",
+										"3": "e29fe160-4558-477d-ba20-90ab085a75c6"
+									},
+									{
+										"0": "Christina",
+										"1": "Hanna",
+										"2": "christinahanna78@contosoisd3.onmicrosoft.com",
+										"3": "e3bdcc05-e6ad-402f-825f-088382bcde55"
+									},
+									{
+										"0": "Amber",
+										"1": "Berger",
+										"2": "amberberger79@contosoisd3.onmicrosoft.com",
+										"3": "ad8fbba2-3cc1-442c-9c14-ef2e151c1ca5"
+									},
+									{
+										"0": "Heather",
+										"1": "Lewis",
+										"2": "heatherlewis80@contosoisd3.onmicrosoft.com",
+										"3": "bdd466db-aa0e-4f1b-919f-43ff82dc49a0"
+									},
+									{
+										"0": "Sarah",
+										"1": "Santiago",
+										"2": "sarahsantiago4@contosoisd3.onmicrosoft.com",
+										"3": "4a70c70a-a23a-432c-a990-1ff84b655508"
+									},
+									{
+										"0": "Marissa",
+										"1": "Maddox",
+										"2": "marissamaddox81@contosoisd3.onmicrosoft.com",
+										"3": "d739ac08-0d34-445d-9f85-a9fd96b2853f"
+									},
+									{
+										"0": "Jessica",
+										"1": "Underwood",
+										"2": "jessicaunderwood82@contosoisd3.onmicrosoft.com",
+										"3": "0f346c6c-9c04-48f6-a066-4205e26a5e1c"
+									},
+									{
+										"0": "Sean",
+										"1": "Martin",
+										"2": "seanmartin83@contosoisd3.onmicrosoft.com",
+										"3": "c9999406-d7b8-4a2f-978f-eb914f0ecad4"
+									},
+									{
+										"0": "Jamie",
+										"1": "Nunez",
+										"2": "jamienunez84@contosoisd3.onmicrosoft.com",
+										"3": "859f729b-72ee-47c0-b99b-ac6e2e96b4da"
+									},
+									{
+										"0": "Melissa",
+										"1": "Johnson",
+										"2": "melissajohnson85@contosoisd3.onmicrosoft.com",
+										"3": "636958ae-1a05-4326-beff-8904e38bb375"
+									},
+									{
+										"0": "Brian",
+										"1": "Mcdonald",
+										"2": "brianmcdonald86@contosoisd3.onmicrosoft.com",
+										"3": "26d60a8d-741f-4780-8d76-13396cda28e8"
+									},
+									{
+										"0": "Veronica",
+										"1": "Castro",
+										"2": "veronicacastro87@contosoisd3.onmicrosoft.com",
+										"3": "ad4662b1-f394-4dd1-be88-3fabd2f8b954"
+									},
+									{
+										"0": "Angelica",
+										"1": "Reid",
+										"2": "angelicareid88@contosoisd3.onmicrosoft.com",
+										"3": "99a994a0-5c8f-4d9a-9c09-72b15822f194"
+									},
+									{
+										"0": "Caitlin",
+										"1": "Guerrero",
+										"2": "caitlinguerrero89@contosoisd3.onmicrosoft.com",
+										"3": "1882a2d3-4b2e-4ab3-9f0a-47f9b5f3e008"
+									},
+									{
+										"0": "Ryan",
+										"1": "Stokes",
+										"2": "ryanstokes90@contosoisd3.onmicrosoft.com",
+										"3": "2240a87f-6e68-4b72-a140-005285a96bf9"
+									},
+									{
+										"0": "Melissa",
+										"1": "Lawson",
+										"2": "melissalawson91@contosoisd3.onmicrosoft.com",
+										"3": "6235c503-109a-4fc9-bbb1-90bf593a0a89"
+									},
+									{
+										"0": "Thomas",
+										"1": "Rice",
+										"2": "thomasrice92@contosoisd3.onmicrosoft.com",
+										"3": "b5c26253-85d1-4341-93a4-62e8fe7ad2f1"
+									},
+									{
+										"0": "Denise",
+										"1": "Estrada",
+										"2": "deniseestrada93@contosoisd3.onmicrosoft.com",
+										"3": "01f12d28-86fb-47d6-91a1-9f05d20bad47"
+									},
+									{
+										"0": "Bradley",
+										"1": "Dickerson",
+										"2": "bradleydickerson94@contosoisd3.onmicrosoft.com",
+										"3": "21426ae8-5d8c-4946-84e2-39c2ce2126ba"
+									},
+									{
+										"0": "Edward",
+										"1": "Johnson",
+										"2": "edwardjohnson95@contosoisd3.onmicrosoft.com",
+										"3": "d520bf34-7a43-4450-a13e-ab5685fa3fad"
+									},
+									{
+										"0": "Jessica",
+										"1": "Kim",
+										"2": "jessicakim96@contosoisd3.onmicrosoft.com",
+										"3": "4c58dfb6-8f7b-42dc-add4-1db692cf4165"
+									},
+									{
+										"0": "Philip",
+										"1": "Williams",
+										"2": "philipwilliams97@contosoisd3.onmicrosoft.com",
+										"3": "c27f7e62-65d6-4407-a89f-a779f9366ed1"
+									},
+									{
+										"0": "Tammy",
+										"1": "Schwartz",
+										"2": "tammyschwartz98@contosoisd3.onmicrosoft.com",
+										"3": "d9d54865-7482-4604-bfaf-add62351b462"
+									},
+									{
+										"0": "Benjamin",
+										"1": "Harrison",
+										"2": "benjaminharrison99@contosoisd3.onmicrosoft.com",
+										"3": "a330c1b6-9ea8-4b81-9afe-7657527e850e"
+									},
+									{
+										"0": "Heather",
+										"1": "Armstrong",
+										"2": "heatherarmstrong100@contosoisd3.onmicrosoft.com",
+										"3": "900dfb69-d722-4d15-b0a7-1ef7e5f0a195"
+									},
+									{
+										"0": "Ryan",
+										"1": "Mendez",
+										"2": "ryanmendez5@contosoisd3.onmicrosoft.com",
+										"3": "fd8aafc6-25f1-4647-a92c-accb82fad2a1"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "givenName",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "surname",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "userPrincipalName",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "id",
+										"type": "string"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"ed066ee6-f665-4384-a6ae-e24f1f5988a9": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "adbr_Windows_10/1/2021_11:16 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Not Evaluated",
+										"4": "",
+										"5": "0.0.0.0",
+										"6": "2021-10-02 00:34:02.0000000",
+										"7": "zacharyjohnson64@contosoisd3.onmicrosoft.com",
+										"8": "16552338-ad38-49bf-be03-61cc545360e1"
+									},
+									{
+										"0": "TapValidation_Windows_9/21/2021_6:07 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "",
+										"5": "0.0.0.0",
+										"6": "2021-09-21 18:07:48.0000000",
+										"7": "chadjones8@contosoisd3.onmicrosoft.com",
+										"8": "5c21ded0-959c-49a1-bed2-263f25ef1f30"
+									},
+									{
+										"0": "JACKYZ-SP4-HAILEY",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "",
+										"5": "10.0.22468.1000",
+										"6": "2021-10-08 04:09:03.0000000",
+										"7": "maxwelljones6@contosoisd3.onmicrosoft.com",
+										"8": "5230ebfd-a9f1-4b46-881a-4d2e254a9521"
+									},
+									{
+										"0": "troyh_Windows_10/7/2021_3:56 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "",
+										"5": "0.0.0.0",
+										"6": "2021-10-07 20:09:03.3168293",
+										"7": "ernestanderson59@contosoisd3.onmicrosoft.com",
+										"8": "2d3a14b0-234a-43a5-a13c-b89eeab40310"
+									},
+									{
+										"0": "hsynthgates_Windows_10/8/2021_8:01 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "",
+										"5": "0.0.0.0",
+										"6": "2021-10-08 20:49:03.0000000",
+										"7": "rayjohnson7@contosoisd3.onmicrosoft.com",
+										"8": "2d9ddac7-5d09-4909-b658-8519d2c6b376"
+									},
+									{
+										"0": "DESKTOP-6F3QKGO",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "",
+										"5": "10.0.22000.100",
+										"6": "2021-07-27 22:55:36.0000000",
+										"7": "jessicaedwards33@contosoisd3.onmicrosoft.com",
+										"8": "1624430b-d098-4256-b88e-bbb4c87361b5"
+									},
+									{
+										"0": "SCOTTY-SG1",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "",
+										"5": "10.0.22000.51",
+										"6": "2021-06-26 10:24:34.0000000",
+										"7": "sandrasanchez15@contosoisd3.onmicrosoft.com",
+										"8": "e290e119-6b31-4ed8-b454-9332a7de1024"
+									},
+									{
+										"0": "LUKES-HP-STREAM",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "",
+										"5": "10.0.22000.65",
+										"6": "2021-07-09 18:27:06.0000000",
+										"7": "andreaberry63@contosoisd3.onmicrosoft.com",
+										"8": "d085743e-bbc9-4482-8c7f-e8da614f6499"
+									},
+									{
+										"0": "HAMC-HP",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "",
+										"5": "10.0.22000.100",
+										"6": "2021-07-29 18:47:04.4428483",
+										"7": "mauricekhan10@contosoisd3.onmicrosoft.com",
+										"8": "271d8ab4-c4f5-43dc-9d0f-08c6f6f1574a"
+									},
+									{
+										"0": "LAPTOP-1TOHA81H",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "",
+										"5": "10.0.21990.1",
+										"6": "2021-06-10 23:22:02.0000000",
+										"7": "paigetaylor11@contosoisd3.onmicrosoft.com",
+										"8": "c17dc4fa-48b6-412b-a9ba-e1003dc29810"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "DeviceName",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "ManagedBy",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "Ownership",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "Compliance",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "OS",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "OSVersion",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "LastCheckIn",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "PrimaryUserUPN",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "DeviceID",
+										"type": "string"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"3748dae4-7be4-4541-934f-7d888b23dc22": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "DESKTOP-M5HCKFC",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21692.1000",
+										"6": "2021-06-01 14:19:07.1733099",
+										"7": "debrasmith1@contosoisd3.onmicrosoft.com",
+										"8": "8feeb0b7-7e88-4ca2-9a12-9a79b604010e"
+									},
+									{
+										"0": "DESKTOP-KQOEDOR",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "10.0.22000.100",
+										"6": "2021-08-05 18:09:59.1314562",
+										"7": "josephlynch26@contosoisd3.onmicrosoft.com",
+										"8": "5662e819-1ade-4de8-b013-155e8a9a2f0f"
+									},
+									{
+										"0": "DESKTOP-O1BG8QB",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21380.1",
+										"6": "2021-07-19 20:53:28.0081679",
+										"7": "jennifermayer2@contosoisd3.onmicrosoft.com",
+										"8": "e911c8bc-31ac-4096-926b-d15a70bd5bd9"
+									},
+									{
+										"0": "HARLEYH-SVEDU",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21990.1",
+										"6": "2021-06-03 06:48:05.7911489",
+										"7": "williamcarpenter48@contosoisd3.onmicrosoft.com",
+										"8": "5318350b-d4e6-41ca-ba0c-3656cf85ec53"
+									},
+									{
+										"0": "cacarras_Windows_7/22/2021_11:10 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-07-23 00:58:12.0000000",
+										"7": "abigaillong3@contosoisd3.onmicrosoft.com",
+										"8": "20a894d2-0cdb-4a46-87e9-88f371f112a9"
+									},
+									{
+										"0": "DESKTOP-NJNOAB6",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.21382.1",
+										"6": "2021-05-14 10:01:08.0000000",
+										"7": "lisaalexander51@contosoisd3.onmicrosoft.com",
+										"8": "88787e75-b837-4ad7-a190-4de321eece4f"
+									},
+									{
+										"0": "FLUBBERGHASTED",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.194",
+										"6": "2021-10-10 15:28:00.0000000",
+										"7": "josephkelley4@contosoisd3.onmicrosoft.com",
+										"8": "5267644d-7869-4a29-b340-76695311129b"
+									},
+									{
+										"0": "adbr_Windows_10/1/2021_11:16 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Not Evaluated",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-02 00:34:02.0000000",
+										"7": "zacharyjohnson64@contosoisd3.onmicrosoft.com",
+										"8": "16552338-ad38-49bf-be03-61cc545360e1"
+									},
+									{
+										"0": "BEAU-LNVO-N23",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.65",
+										"6": "2021-07-12 20:06:52.0000000",
+										"7": "amberbuchanan5@contosoisd3.onmicrosoft.com",
+										"8": "4dc2feb4-79ba-4d15-a3ad-8c7efdacbc8b"
+									},
+									{
+										"0": "TapValidation_Windows_9/21/2021_6:07 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-09-21 18:07:48.0000000",
+										"7": "chadjones8@contosoisd3.onmicrosoft.com",
+										"8": "5c21ded0-959c-49a1-bed2-263f25ef1f30"
+									},
+									{
+										"0": "JACKYZ-SP4-HAILEY",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22468.1000",
+										"6": "2021-10-08 04:09:03.0000000",
+										"7": "maxwelljones6@contosoisd3.onmicrosoft.com",
+										"8": "5230ebfd-a9f1-4b46-881a-4d2e254a9521"
+									},
+									{
+										"0": "troyh_Windows_10/7/2021_3:56 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-07 20:09:03.3168293",
+										"7": "ernestanderson59@contosoisd3.onmicrosoft.com",
+										"8": "2d3a14b0-234a-43a5-a13c-b89eeab40310"
+									},
+									{
+										"0": "hsynthgates_Windows_10/8/2021_8:01 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-10-08 20:49:03.0000000",
+										"7": "rayjohnson7@contosoisd3.onmicrosoft.com",
+										"8": "2d9ddac7-5d09-4909-b658-8519d2c6b376"
+									},
+									{
+										"0": "DESKTOP-6F3QKGO",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.100",
+										"6": "2021-07-27 22:55:36.0000000",
+										"7": "jessicaedwards33@contosoisd3.onmicrosoft.com",
+										"8": "1624430b-d098-4256-b88e-bbb4c87361b5"
+									},
+									{
+										"0": "DESKTOP-U47UG6E",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.65",
+										"6": "2021-08-07 02:09:54.1568344",
+										"7": "chadjones8@contosoisd3.onmicrosoft.com",
+										"8": "480cbbf8-6e78-4025-bf7b-94dffa147739"
+									},
+									{
+										"0": "SCOTTY-SG1",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.51",
+										"6": "2021-06-26 10:24:34.0000000",
+										"7": "sandrasanchez15@contosoisd3.onmicrosoft.com",
+										"8": "e290e119-6b31-4ed8-b454-9332a7de1024"
+									},
+									{
+										"0": "MICAHM-EDU",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.100",
+										"6": "2021-10-01 18:41:52.0000000",
+										"7": "peggyvargas9@contosoisd3.onmicrosoft.com",
+										"8": "57106046-0d8c-41cd-a099-6cb4b7967851"
+									},
+									{
+										"0": "LUKES-HP-STREAM",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.65",
+										"6": "2021-07-09 18:27:06.0000000",
+										"7": "andreaberry63@contosoisd3.onmicrosoft.com",
+										"8": "d085743e-bbc9-4482-8c7f-e8da614f6499"
+									},
+									{
+										"0": "HAMC-HP",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.100",
+										"6": "2021-07-29 18:47:04.4428483",
+										"7": "mauricekhan10@contosoisd3.onmicrosoft.com",
+										"8": "271d8ab4-c4f5-43dc-9d0f-08c6f6f1574a"
+									},
+									{
+										"0": "DESKTOP-7DNUJKK",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "10.0.22000.160",
+										"6": "2021-09-17 18:17:23.0000000",
+										"7": "robertramirez43@contosoisd3.onmicrosoft.com",
+										"8": "fab05a09-d12d-46c3-83f3-350bd08333fb"
+									},
+									{
+										"0": "LAPTOP-1TOHA81H",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.21990.1",
+										"6": "2021-06-10 23:22:02.0000000",
+										"7": "paigetaylor11@contosoisd3.onmicrosoft.com",
+										"8": "c17dc4fa-48b6-412b-a9ba-e1003dc29810"
+									},
+									{
+										"0": "LAPTOP-KTC5D46F",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.21990.1",
+										"6": "2021-06-16 22:33:19.0000000",
+										"7": "oliviahendricks77@contosoisd3.onmicrosoft.com",
+										"8": "ec52e252-40d6-4e6b-a608-7c4f01e1fd46"
+									},
+									{
+										"0": "Sudht-LCD",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.176",
+										"6": "2021-09-02 17:59:31.0000000",
+										"7": "stephenramirez12@contosoisd3.onmicrosoft.com",
+										"8": "1228d740-2f71-414c-9ed6-d1d43b425c7a"
+									},
+									{
+										"0": "LAPTOP-KV35F4C4",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.194",
+										"6": "2021-09-30 06:52:19.0000000",
+										"7": "shelbyberger1@contosoisd3.onmicrosoft.com",
+										"8": "3756aa46-3401-423a-a9b6-a0b1dcf4488f"
+									},
+									{
+										"0": "v-soboga_Windows_10/11/2021_4:42 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-11 19:02:56.0000000",
+										"7": "reginacarter13@contosoisd3.onmicrosoft.com",
+										"8": "803d1276-0c9c-48de-8c7f-a0e685db9dd0"
+									},
+									{
+										"0": "PINE",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22118.1000",
+										"6": "2021-06-28 06:57:05.0000000",
+										"7": "jacobolson38@contosoisd3.onmicrosoft.com",
+										"8": "94792633-75fe-485b-8345-331032f381e1"
+									},
+									{
+										"0": "NZHSELFHOST",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Android",
+										"5": "10.0.22000.120",
+										"6": "2021-08-10 16:20:11.0000000",
+										"7": "patriciadillon14@contosoisd3.onmicrosoft.com",
+										"8": "b51778a8-4f3d-46fe-86b7-4824c3ef2c74"
+									},
+									{
+										"0": "GAYATRI",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22127.1000",
+										"6": "2021-07-15 11:59:20.0000000",
+										"7": "peggyvargas9@contosoisd3.onmicrosoft.com",
+										"8": "18065563-1ee0-4022-af98-cb431aa11871"
+									},
+									{
+										"0": "DESKTOP-6EMN5A0",
+										"1": "Intune",
+										"2": "School",
+										"3": "Not Evaluated",
+										"4": "Windows",
+										"5": "10.0.22157.1000",
+										"6": "2021-08-03 15:38:04.0000000",
+										"7": "sandrasanchez15@contosoisd3.onmicrosoft.com",
+										"8": "0e4440e1-b14d-4302-85ca-7f48bcc3ca9f"
+									},
+									{
+										"0": "DESKTOP-SD76DBQ",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "10.0.22000.194",
+										"6": "2021-09-20 15:44:14.4378177",
+										"7": "bradleydickerson94@contosoisd3.onmicrosoft.com",
+										"8": "6c1d5211-a278-4104-9b6a-d840bdf425b9"
+									},
+									{
+										"0": "JMW-EDU",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.51",
+										"6": "2021-07-02 16:12:57.0480906",
+										"7": "elizabethking17@contosoisd3.onmicrosoft.com",
+										"8": "50b95b49-942d-4cc3-8864-c7ab73cd1058"
+									},
+									{
+										"0": "bcross_Windows_10/11/2021_9:55 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-12 16:13:03.8803119",
+										"7": "elizabethking17@contosoisd3.onmicrosoft.com",
+										"8": "6478e559-cc96-4189-b0a7-86fb896c4824"
+									},
+									{
+										"0": "LAPTOP-M9DQ07SF",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21990.1",
+										"6": "2021-10-13 09:03:19.3648520",
+										"7": "reginaldlogan22@contosoisd3.onmicrosoft.com",
+										"8": "e134214c-77e6-4c5c-a2b3-81f052a9e00e"
+									},
+									{
+										"0": "LAPTOP-S8K7A7AA",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.21990.1",
+										"6": "2021-06-16 18:51:10.6851832",
+										"7": "joshuaelliott18@contosoisd3.onmicrosoft.com",
+										"8": "05896c31-eb6a-44a0-bcb6-e88c0d44a5cc"
+									},
+									{
+										"0": "JANK-HAILEY",
+										"1": "Intune",
+										"2": "School",
+										"3": "Noncompliant",
+										"4": "macOS",
+										"5": "10.0.22000.100",
+										"6": "2021-07-30 19:01:33.0000000",
+										"7": "lisaalexander51@contosoisd3.onmicrosoft.com",
+										"8": "17f36d1f-350a-45c1-9d30-60cdb44dd6cf"
+									},
+									{
+										"0": "CB-HALEY2",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.100",
+										"6": "2021-07-27 22:48:42.4936369",
+										"7": "teresarobinson19@contosoisd3.onmicrosoft.com",
+										"8": "3bb757c4-0e39-4855-a7ac-b594231c568a"
+									},
+									{
+										"0": "BLINK",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.132",
+										"6": "2021-10-08 05:44:26.1986241",
+										"7": "stevenlarsen30@contosoisd3.onmicrosoft.com",
+										"8": "26cdf686-eb29-404f-9409-6b0ef163cb59"
+									},
+									{
+										"0": "EV2BB44",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.176",
+										"6": "2021-09-17 18:36:03.9886625",
+										"7": "ashleytodd20@contosoisd3.onmicrosoft.com",
+										"8": "c68e6172-e6d2-4cb8-b739-52f1cb8de37d"
+									},
+									{
+										"0": "SAREEN-TENJIN",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "10.0.22000.132",
+										"6": "2021-09-15 04:58:31.0000000",
+										"7": "jacobolson38@contosoisd3.onmicrosoft.com",
+										"8": "07e9ee61-aa53-4bf5-80c3-f941ebff0fa3"
+									},
+									{
+										"0": "DESKTOP-CKDVB3S",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.51",
+										"6": "2021-07-02 06:28:37.0000000",
+										"7": "shelbyberger1@contosoisd3.onmicrosoft.com",
+										"8": "1ff1018f-d63c-4241-bc77-e321306609a1"
+									},
+									{
+										"0": "adbr_Windows_10/6/2021_5:42 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-06 20:00:00.0000000",
+										"7": "stevenlarsen30@contosoisd3.onmicrosoft.com",
+										"8": "7a35cdac-d3b9-4343-942b-d22faaca51a0"
+									},
+									{
+										"0": "bcross_Windows_9/30/2021_11:32 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-09-30 23:35:01.0000000",
+										"7": "lisamckee21@contosoisd3.onmicrosoft.com",
+										"8": "283ff4d8-a323-4acf-8968-98846da2a970"
+									},
+									{
+										"0": "LAPTOP-75G15RQ9",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.71",
+										"6": "2021-07-19 21:00:36.0000000",
+										"7": "seanmartin83@contosoisd3.onmicrosoft.com",
+										"8": "274513eb-1e90-4257-aa2b-67710dc22fa5"
+									},
+									{
+										"0": "CHRISGHAILEY",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.160",
+										"6": "2021-08-26 18:30:02.0000000",
+										"7": "reginaldlogan22@contosoisd3.onmicrosoft.com",
+										"8": "4340a77f-5a18-42b6-a70b-8b3395e15cb0"
+									},
+									{
+										"0": "anvo_Windows_10/8/2021_7:25 AM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-12 20:48:46.0000000",
+										"7": "shelbyberger1@contosoisd3.onmicrosoft.com",
+										"8": "243ff4f7-5dc6-4157-80b5-a588ac87bf46"
+									},
+									{
+										"0": "HAILEY",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "10.0.22000.100",
+										"6": "2021-07-30 04:29:04.0000000",
+										"7": "jacquelinecole23@contosoisd3.onmicrosoft.com",
+										"8": "7b151247-0c42-428c-8624-5bca82b0418d"
+									},
+									{
+										"0": "LAPTOP-GMBEQG21",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.19042.1237",
+										"6": "2021-10-11 21:42:44.1448232",
+										"7": "christinahanna78@contosoisd3.onmicrosoft.com",
+										"8": "742019ed-1d9e-421d-bb15-8ccbe60cf242"
+									},
+									{
+										"0": "TapValidation_Windows_9/29/2021_4:10 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-09-29 16:13:02.0000000",
+										"7": "raynelson24@contosoisd3.onmicrosoft.com",
+										"8": "d915a2d6-8281-4bd2-b1e7-6b4eff62eeb6"
+									},
+									{
+										"0": "VIJAY",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22137.1000",
+										"6": "2021-07-05 12:44:02.0000000",
+										"7": "bradleydickerson94@contosoisd3.onmicrosoft.com",
+										"8": "6f0472da-94cf-469d-8436-eff6c686f133"
+									},
+									{
+										"0": "adbr_Windows_10/7/2021_9:25 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-07 21:28:01.0000000",
+										"7": "andrewhunter25@contosoisd3.onmicrosoft.com",
+										"8": "c4c92d6c-4f22-43b2-9ea0-c9d020745d33"
+									},
+									{
+										"0": "DESKTOP-C2DBFC3",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22147.1000",
+										"6": "2021-07-22 03:23:02.8151495",
+										"7": "jacquelinecole23@contosoisd3.onmicrosoft.com",
+										"8": "ea4b2197-404e-4512-b19c-c1a1eff0ea88"
+									},
+									{
+										"0": "DESKTOP-987HJ3E",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.176",
+										"6": "2021-09-03 06:08:58.0000000",
+										"7": "josephlynch26@contosoisd3.onmicrosoft.com",
+										"8": "732af15e-b8e7-464b-9881-870b1bcc3ee3"
+									},
+									{
+										"0": "LAPTOP-T7GP0KV6",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.160",
+										"6": "2021-08-19 20:20:06.0000000",
+										"7": "paigetaylor11@contosoisd3.onmicrosoft.com",
+										"8": "1b7c75c7-4a7b-453d-b778-2a774da5a5d2"
+									},
+									{
+										"0": "VHDX",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22121.1000",
+										"6": "2021-06-15 16:54:04.0000000",
+										"7": "gabrieldudley27@contosoisd3.onmicrosoft.com",
+										"8": "6bf79a16-f58b-4f76-8ede-b10c3ea1c3e8"
+									},
+									{
+										"0": "STEVEMAS-TEV2",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "10.0.22000.100",
+										"6": "2021-08-04 05:07:06.0000000",
+										"7": "marissamaddox81@contosoisd3.onmicrosoft.com",
+										"8": "030bf5ba-26b5-4c5c-a609-458dbbb0119a"
+									},
+									{
+										"0": "S",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22147.1000",
+										"6": "2021-09-09 05:27:35.0000000",
+										"7": "bradypacheco28@contosoisd3.onmicrosoft.com",
+										"8": "526fcb66-fae0-4e9a-b89a-168ac98df863"
+									},
+									{
+										"0": "DVBB33",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.176",
+										"6": "2021-09-17 17:57:05.0000000",
+										"7": "josephlynch26@contosoisd3.onmicrosoft.com",
+										"8": "286050d5-3163-465c-8612-72300ec123e4"
+									},
+									{
+										"0": "SUDHT-TEN",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.194",
+										"6": "2021-10-12 00:37:14.0000000",
+										"7": "amyprice29@contosoisd3.onmicrosoft.com",
+										"8": "ed97532b-180b-4897-b1de-84d21f02c36d"
+									},
+									{
+										"0": "E536E1607026445",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22117.1000",
+										"6": "2021-06-18 16:06:03.0000000",
+										"7": "ambercook62@contosoisd3.onmicrosoft.com",
+										"8": "98ae4cd4-4907-4dc7-ab02-905d862bf754"
+									},
+									{
+										"0": "hsynthgates_Windows_9/30/2021_2:18 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-06 01:40:22.0000000",
+										"7": "stevenlarsen30@contosoisd3.onmicrosoft.com",
+										"8": "90314a96-27b6-431b-982e-429f6cbedc1c"
+									},
+									{
+										"0": "DESKTOP-QI9NS82",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Not Evaluated",
+										"4": "macOS",
+										"5": "10.0.21376.1000",
+										"6": "2021-05-17 21:27:49.0000000",
+										"7": "brandonellis68@contosoisd3.onmicrosoft.com",
+										"8": "f96c8c0a-f220-431a-ae0f-5fdadb9dd4b9"
+									},
+									{
+										"0": "scottt-student_Windows_10/13/2021_12:01 AM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-13 00:19:01.2854421",
+										"7": "johnbrown31@contosoisd3.onmicrosoft.com",
+										"8": "473ee65a-0220-4189-8bb0-f07d9521b5be"
+									},
+									{
+										"0": "GVILLA-DEMO-LVO",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.194",
+										"6": "2021-09-22 02:38:37.0000000",
+										"7": "bradleydickerson94@contosoisd3.onmicrosoft.com",
+										"8": "ae06de21-bc2f-432c-96f4-16e9440e9314"
+									},
+									{
+										"0": "LAPTOP-96FS5FS5",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.1",
+										"6": "2021-06-29 07:06:42.0000000",
+										"7": "melissaphelps32@contosoisd3.onmicrosoft.com",
+										"8": "17121057-be4b-4b02-b07d-7dd94617687b"
+									},
+									{
+										"0": "DESKTOP-5MEJI1U",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22138.1001",
+										"6": "2021-07-12 20:38:35.0705332",
+										"7": "annaalvarado60@contosoisd3.onmicrosoft.com",
+										"8": "15e7ed07-227e-4f66-904e-dc3ec3f7ccb9"
+									},
+									{
+										"0": "DESKTOP-9IK2CQN",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.1",
+										"6": "2021-07-03 06:07:26.0000000",
+										"7": "jessicaedwards33@contosoisd3.onmicrosoft.com",
+										"8": "fd7d0425-a29c-4c41-b747-7717e711917e"
+									},
+									{
+										"0": "TapValidation_Windows_9/30/2021_4:53 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-09-30 16:56:03.0000000",
+										"7": "thomasrice92@contosoisd3.onmicrosoft.com",
+										"8": "e631dbec-4d97-42b9-a65b-e77fdcb2f858"
+									},
+									{
+										"0": "LAPTOP-E973CVHH",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.194",
+										"6": "2021-10-07 22:06:33.0000000",
+										"7": "jenniferdavenport34@contosoisd3.onmicrosoft.com",
+										"8": "6df32019-be5f-4a5d-8d80-d6591201ad6d"
+									},
+									{
+										"0": "DESKTOP-UPNEC4G",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.160",
+										"6": "2021-08-23 17:03:04.0165356",
+										"7": "shelbyberger1@contosoisd3.onmicrosoft.com",
+										"8": "de6af545-2842-4336-a425-f2963e2c387c"
+									},
+									{
+										"0": "AC2DF7CD7E21454",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22466.1000",
+										"6": "2021-09-30 20:29:02.6610730",
+										"7": "abigailsmith35@contosoisd3.onmicrosoft.com",
+										"8": "2fc30eef-1e7b-4563-90a2-606cbd57ca5f"
+									},
+									{
+										"0": "DESKTOP-G88H3FI",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22141.1000",
+										"6": "2021-07-23 05:26:48.0000000",
+										"7": "nathancortez46@contosoisd3.onmicrosoft.com",
+										"8": "d005ae75-3214-4dbf-8c88-47600d081555"
+									},
+									{
+										"0": "DESKTOP-46F83OB",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.160",
+										"6": "2021-09-14 08:46:50.0000000",
+										"7": "johnberry36@contosoisd3.onmicrosoft.com",
+										"8": "ac12be3f-4188-4418-bedd-36fce2180a6a"
+									},
+									{
+										"0": "EV2BB33",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.168",
+										"6": "2021-09-14 05:32:24.0000000",
+										"7": "stephenramirez12@contosoisd3.onmicrosoft.com",
+										"8": "b90d9907-2c4c-433f-8835-9016f622241e"
+									},
+									{
+										"0": "DESKTOP-0PGD1QD",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22137.1000",
+										"6": "2021-07-21 15:56:01.0000000",
+										"7": "jamesjones37@contosoisd3.onmicrosoft.com",
+										"8": "667b1076-ff7a-4e8f-ab80-787828165be6"
+									},
+									{
+										"0": "adbr_Windows_10/6/2021_12:50 AM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-07 20:21:46.0000000",
+										"7": "veronicacastro87@contosoisd3.onmicrosoft.com",
+										"8": "6adfe064-e0fe-4c84-a9b6-35fbdafde04a"
+									},
+									{
+										"0": "egorabr_Windows_9/3/2021_1:40 AM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "0.0.0.0",
+										"6": "2021-09-03 01:40:35.0000000",
+										"7": "jacobolson38@contosoisd3.onmicrosoft.com",
+										"8": "840338d4-2dae-4025-b335-d1a1e8271bf0"
+									},
+									{
+										"0": "SFUDALLY_NPC",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.120",
+										"6": "2021-08-11 09:14:06.0000000",
+										"7": "jessicaedwards33@contosoisd3.onmicrosoft.com",
+										"8": "304249d6-2590-447a-9cca-46486b6ff6eb"
+									},
+									{
+										"0": "DESKTOP-IRUERNB",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.132",
+										"6": "2021-08-18 22:34:17.0000000",
+										"7": "lydiahunt39@contosoisd3.onmicrosoft.com",
+										"8": "09ae9f63-7ca5-47bb-baf1-2128532582f7"
+									},
+									{
+										"0": "CALVINSCHOOL",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "10.0.22000.132",
+										"6": "2021-08-13 19:10:48.0000000",
+										"7": "williemartin72@contosoisd3.onmicrosoft.com",
+										"8": "2fa1a1d9-e1a4-4c60-8b3a-455531c077bf"
+									},
+									{
+										"0": "HPC",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22158.1000",
+										"6": "2021-08-31 23:53:08.0000000",
+										"7": "johnnysmith40@contosoisd3.onmicrosoft.com",
+										"8": "530573e0-ddc9-4d22-b4ef-e7d88356be9a"
+									},
+									{
+										"0": "LAPTOP-BPEN0KO3",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.132",
+										"6": "2021-10-12 15:54:23.0000000",
+										"7": "johnnysmith40@contosoisd3.onmicrosoft.com",
+										"8": "94ea9e26-84c6-4439-9645-324864d46f21"
+									},
+									{
+										"0": "EV2BB77",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.194",
+										"6": "2021-09-28 17:51:51.4168905",
+										"7": "wandacervantes2@contosoisd3.onmicrosoft.com",
+										"8": "ebda2b7f-0455-4710-9fec-6b7d122aaf52"
+									},
+									{
+										"0": "JLiefke-TenjinEv2",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.21380.1001",
+										"6": "2021-06-15 19:02:03.8877928",
+										"7": "amyprice29@contosoisd3.onmicrosoft.com",
+										"8": "f4dd854a-525a-4fa3-9791-cb9308518417"
+									},
+									{
+										"0": "tammieyang_Windows_10/8/2021_7:27 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-08 20:45:03.0000000",
+										"7": "davidwest41@contosoisd3.onmicrosoft.com",
+										"8": "db49aa61-bc3e-4cab-8089-cdf07557ad15"
+									},
+									{
+										"0": "STEVEMAS-TDVF",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.194",
+										"6": "2021-09-27 17:59:10.0000000",
+										"7": "ashleytodd20@contosoisd3.onmicrosoft.com",
+										"8": "b79b7cc5-d501-4290-8e93-0ec5422a8267"
+									},
+									{
+										"0": "SEGUN",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.120",
+										"6": "2021-10-12 18:07:56.0000000",
+										"7": "curtistodd42@contosoisd3.onmicrosoft.com",
+										"8": "1cc44001-f38b-4332-9f0a-1f45bccf4470"
+									},
+									{
+										"0": "LAPTOP-0RFRMTDT",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.194",
+										"6": "2021-10-12 17:13:39.0000000",
+										"7": "bradleydickerson94@contosoisd3.onmicrosoft.com",
+										"8": "9cc1b41a-6a6d-4525-abbd-9381fb11469c"
+									},
+									{
+										"0": "DESKTOP-UT4684C",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.37",
+										"6": "2021-07-01 20:27:11.0000000",
+										"7": "robertramirez43@contosoisd3.onmicrosoft.com",
+										"8": "a73e9f0f-01cc-4d82-9387-9fa68fa4bc12"
+									},
+									{
+										"0": "S",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "10.0.22117.1000",
+										"6": "2021-06-11 03:16:04.0000000",
+										"7": "stephenbennett53@contosoisd3.onmicrosoft.com",
+										"8": "bd7293fc-a194-4d48-bbf6-ea6ddaef3b79"
+									},
+									{
+										"0": "JLIEFKE-TAIKAN",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.194",
+										"6": "2021-09-22 16:35:34.7555047",
+										"7": "davidtaylor44@contosoisd3.onmicrosoft.com",
+										"8": "552c9e77-73fb-4b65-b0e5-8ba0061ff730"
+									},
+									{
+										"0": "S",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22121.1000",
+										"6": "2021-06-17 05:21:46.2008896",
+										"7": "andrewhunter25@contosoisd3.onmicrosoft.com",
+										"8": "9d2093cc-1b76-44db-85f9-7ab8f22d536e"
+									},
+									{
+										"0": "SFUDALLY_NPC",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.71",
+										"6": "2021-07-18 18:28:51.5828324",
+										"7": "tracipeterson45@contosoisd3.onmicrosoft.com",
+										"8": "e1965237-dbc3-41c8-ae5a-caedd7c91e53"
+									},
+									{
+										"0": "TEACH",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.51",
+										"6": "2021-06-29 18:24:35.0000000",
+										"7": "josephterrell50@contosoisd3.onmicrosoft.com",
+										"8": "55355047-dd58-4779-9c47-9400ccaea9a4"
+									},
+									{
+										"0": "LAPTOP-JONRJ01J",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "10.0.21990.1",
+										"6": "2021-06-10 08:35:04.0000000",
+										"7": "nathancortez46@contosoisd3.onmicrosoft.com",
+										"8": "7c3b923c-759a-44e3-894d-30df8da4f259"
+									},
+									{
+										"0": "DESKTOP-OQ7IBHD",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "10.0.22138.1000",
+										"6": "2021-07-13 18:18:02.0000000",
+										"7": "thomassmith76@contosoisd3.onmicrosoft.com",
+										"8": "5e9419a1-45c3-4c65-ae7e-6b5911c6777a"
+									},
+									{
+										"0": "FFCA229DEC14428",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22118.1000",
+										"6": "2021-06-18 15:43:01.0000000",
+										"7": "amandalong47@contosoisd3.onmicrosoft.com",
+										"8": "7fea5732-dffe-4de0-9192-bdd5b03acc68"
+									},
+									{
+										"0": "DESKTOP-DBTTPA9",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22136.1001",
+										"6": "2021-07-07 20:37:02.0000000",
+										"7": "elizabethking17@contosoisd3.onmicrosoft.com",
+										"8": "531c5d60-cf82-457e-91d9-32f0ec52f734"
+									},
+									{
+										"0": "IRIS",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22142.1000",
+										"6": "2021-09-27 16:53:05.0000000",
+										"7": "williamcarpenter48@contosoisd3.onmicrosoft.com",
+										"8": "3c57996b-5563-4303-bb6e-0d3d40d3c2de"
+									},
+									{
+										"0": "DESKTOP-EGV1O0R",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.176",
+										"6": "2021-09-02 19:02:02.0000000",
+										"7": "ryanstokes90@contosoisd3.onmicrosoft.com",
+										"8": "73a24c89-7695-4410-97d3-885f8bce6574"
+									},
+									{
+										"0": "DVBB5",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Android",
+										"5": "10.0.22000.194",
+										"6": "2021-09-21 18:12:19.4217892",
+										"7": "gloriafowler49@contosoisd3.onmicrosoft.com",
+										"8": "401460a2-4af7-4193-9c1b-2f6f17dea72f"
+									},
+									{
+										"0": "DESKTOP-TAM8HHL",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.1",
+										"6": "2021-06-07 20:32:03.0000000",
+										"7": "jennifersanders58@contosoisd3.onmicrosoft.com",
+										"8": "241df36c-9a8e-4053-a2ce-1625dca3238e"
+									},
+									{
+										"0": "PATDERKS-CLOUD",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22137.1000",
+										"6": "2021-07-12 17:28:29.0000000",
+										"7": "josephterrell50@contosoisd3.onmicrosoft.com",
+										"8": "8a05488e-8768-45ac-af0b-7f000bbd09d2"
+									},
+									{
+										"0": "DESKTOP-ME7LFPC",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "10.0.22146.1000",
+										"6": "2021-07-21 23:53:04.0000000",
+										"7": "stacythompson16@contosoisd3.onmicrosoft.com",
+										"8": "cf7d823b-9ae3-4933-8747-08f3af80329f"
+									},
+									{
+										"0": "DESKTOP-S1GHNLF",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.100",
+										"6": "2021-07-23 02:59:35.0000000",
+										"7": "edwardjohnson95@contosoisd3.onmicrosoft.com",
+										"8": "9c75779c-2d76-4bca-8560-be8d9aa0e0cc"
+									},
+									{
+										"0": "LAPTOP-1IP0KA43",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.21990.1",
+										"6": "2021-06-08 20:48:22.0000000",
+										"7": "jeremywright52@contosoisd3.onmicrosoft.com",
+										"8": "fe75c1fd-40c9-435a-ae23-00e37c39a100"
+									},
+									{
+										"0": "LAPTOP-EP9VLJEU",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Android",
+										"5": "10.0.22000.194",
+										"6": "2021-09-28 18:46:03.0000000",
+										"7": "sandrasanchez15@contosoisd3.onmicrosoft.com",
+										"8": "b36e9d18-3dd2-4333-95cb-5ece3a3188ba"
+									},
+									{
+										"0": "SURFACE-KID-01",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.184",
+										"6": "2021-09-19 22:10:53.0000000",
+										"7": "stephenbennett53@contosoisd3.onmicrosoft.com",
+										"8": "5f719cbb-67ff-4ec0-a59b-0cd6646018e2"
+									},
+									{
+										"0": "DESKTOP-O9T9OH9",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.41",
+										"6": "2021-06-18 21:54:22.0000000",
+										"7": "abigaillong3@contosoisd3.onmicrosoft.com",
+										"8": "af6380fd-0afe-4a46-aa46-84df8d6b9d1c"
+									},
+									{
+										"0": "DESKTOP-7C14D64",
+										"1": "Intune",
+										"2": "School",
+										"3": "Noncompliant",
+										"4": "macOS",
+										"5": "10.0.22000.132",
+										"6": "2021-09-02 13:03:45.0000000",
+										"7": "johnhampton54@contosoisd3.onmicrosoft.com",
+										"8": "37231ae6-6a33-4958-ab35-acdb31c724d5"
+									},
+									{
+										"0": "DESKTOP-PUUTL89",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.71",
+										"6": "2021-09-08 19:37:24.7839484",
+										"7": "williamcarpenter48@contosoisd3.onmicrosoft.com",
+										"8": "70e7d653-c515-4e19-bc65-ef364aa29eec"
+									},
+									{
+										"0": "FRED",
+										"1": "Intune",
+										"2": "School",
+										"3": "Not Evaluated",
+										"4": "macOS",
+										"5": "10.0.22116.1000",
+										"6": "2021-06-14 20:39:01.0000000",
+										"7": "codybriggs55@contosoisd3.onmicrosoft.com",
+										"8": "cd25f72a-490a-497f-90bc-81feb49d2e54"
+									},
+									{
+										"0": "DESKTOP-C5KBDDM",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.194",
+										"6": "2021-09-20 14:48:57.0000000",
+										"7": "johnberry36@contosoisd3.onmicrosoft.com",
+										"8": "ce5aba28-5307-4e9e-88d4-27f2a24eeef3"
+									},
+									{
+										"0": "DESKTOP-RFBPF3R",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.184",
+										"6": "2021-09-12 01:22:56.0000000",
+										"7": "tylerramirez56@contosoisd3.onmicrosoft.com",
+										"8": "9419e865-a071-485d-b7d5-738a71748501"
+									},
+									{
+										"0": "LAPTOP-5UH4JTEP",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21990.1",
+										"6": "2021-06-11 19:34:08.0000000",
+										"7": "angelicareid88@contosoisd3.onmicrosoft.com",
+										"8": "72d70110-5c39-42a1-9b00-389875647c7e"
+									},
+									{
+										"0": "RESTORE-ME",
+										"1": "Intune",
+										"2": "School",
+										"3": "Not Evaluated",
+										"4": "iOS/iPadOS",
+										"5": "10.0.22132.1001",
+										"6": "2021-07-07 23:52:39.0000000",
+										"7": "rubenwiggins57@contosoisd3.onmicrosoft.com",
+										"8": "17492cbe-5f79-4dcd-b2aa-7921bec3e3f0"
+									},
+									{
+										"0": "DESKTOP-7T9CLEA",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22157.1000",
+										"6": "2021-08-23 22:31:04.0435159",
+										"7": "ernestanderson59@contosoisd3.onmicrosoft.com",
+										"8": "e6971a71-d6d4-48f2-91d9-af0304a46e3b"
+									},
+									{
+										"0": "7200D34FCB5749D",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22144.1000",
+										"6": "2021-07-28 09:06:03.0000000",
+										"7": "bradypacheco28@contosoisd3.onmicrosoft.com",
+										"8": "ed26f173-25cc-4e9a-aeb1-99d275f4f252"
+									},
+									{
+										"0": "HAILEYSOUTH",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.100",
+										"6": "2021-08-13 17:36:04.0000000",
+										"7": "ernestanderson59@contosoisd3.onmicrosoft.com",
+										"8": "55a1aa94-23a2-4832-bb1d-80faee8c9237"
+									},
+									{
+										"0": "DESKTOP-M3G10RP",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22136.1001",
+										"6": "2021-07-07 22:16:03.0000000",
+										"7": "melissalawson91@contosoisd3.onmicrosoft.com",
+										"8": "d2db16f1-814e-4f6c-b5c5-a810b7409f3d"
+									},
+									{
+										"0": "DESKTOP-K8N1JE2",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.176",
+										"6": "2021-09-09 08:15:56.1473194",
+										"7": "annaalvarado60@contosoisd3.onmicrosoft.com",
+										"8": "a7d1515b-a02d-4a6f-aae1-68ea7c08ed69"
+									},
+									{
+										"0": "DESKTOP-9U5IM39",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22118.1000",
+										"6": "2021-07-08 04:29:26.0994255",
+										"7": "peggyvargas9@contosoisd3.onmicrosoft.com",
+										"8": "86f37799-443e-41e1-9483-660b6d7774f5"
+									},
+									{
+										"0": "D1-EDU-ACER-2",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.132",
+										"6": "2021-08-19 16:24:17.8029685",
+										"7": "jessicashort3@contosoisd3.onmicrosoft.com",
+										"8": "a74915d4-7662-42ad-8f29-62dff8385ccb"
+									},
+									{
+										"0": "GVILLA-TAP-LVO1",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Android",
+										"5": "10.0.22000.176",
+										"6": "2021-09-07 17:47:31.0000000",
+										"7": "markhoward75@contosoisd3.onmicrosoft.com",
+										"8": "91f995e2-f550-4a3c-b482-4eef24d985b2"
+									},
+									{
+										"0": "LAPTOP-IA16NROT",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-09-17 21:15:11.7153155",
+										"7": "caitlinpeters61@contosoisd3.onmicrosoft.com",
+										"8": "16beaf11-c2dd-4ab4-bb74-cdcb79703ed8"
+									},
+									{
+										"0": "DESKTOP-DQCO04L",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.184",
+										"6": "2021-09-14 13:52:03.4248748",
+										"7": "angelabaxter71@contosoisd3.onmicrosoft.com",
+										"8": "803a2834-1e2c-4c20-85a6-12e8d4b99463"
+									},
+									{
+										"0": "KIWI",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22130.1000",
+										"6": "2021-07-01 06:27:04.0000000",
+										"7": "ambercook62@contosoisd3.onmicrosoft.com",
+										"8": "aa8a5573-208c-4c13-b5a0-1c635c77d900"
+									},
+									{
+										"0": "D8546809439C4C3",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22142.1000",
+										"6": "2021-08-03 22:06:48.0000000",
+										"7": "joshuaelliott18@contosoisd3.onmicrosoft.com",
+										"8": "a9536420-7258-4b82-a856-c463c8ba4206"
+									},
+									{
+										"0": "S",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22147.1000",
+										"6": "2021-07-27 14:50:00.0000000",
+										"7": "andreaberry63@contosoisd3.onmicrosoft.com",
+										"8": "2a0a3103-2c97-45e4-8940-691a6b600019"
+									},
+									{
+										"0": "STEVEMAS-TEV1",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.21990.1",
+										"6": "2021-06-16 08:00:06.0000000",
+										"7": "mauricekhan10@contosoisd3.onmicrosoft.com",
+										"8": "90facdde-9c39-49ae-b326-a2f1a3d86a3e"
+									},
+									{
+										"0": "hsynthgates_Windows_10/7/2021_8:49 AM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-07 11:07:04.0000000",
+										"7": "zacharyjohnson64@contosoisd3.onmicrosoft.com",
+										"8": "c3a571be-de97-4aec-ad57-a7dd0be2ffc9"
+									},
+									{
+										"0": "DESKTOP-E8079BG",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22449.1000",
+										"6": "2021-09-10 10:56:03.0000000",
+										"7": "michaelbryant65@contosoisd3.onmicrosoft.com",
+										"8": "57096cdd-0b5e-477f-a3e1-a6399d21278b"
+									},
+									{
+										"0": "MONKEY42",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.184",
+										"6": "2021-09-14 09:32:10.0037367",
+										"7": "michaelbryant65@contosoisd3.onmicrosoft.com",
+										"8": "95bd913a-d338-4f26-b00e-6e5a334f9a70"
+									},
+									{
+										"0": "eranmeg_Windows_10/7/2021_6:31 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-08 17:58:49.0000000",
+										"7": "amberberger79@contosoisd3.onmicrosoft.com",
+										"8": "1429e262-ad12-4eaf-ad61-f32f36eaa635"
+									},
+									{
+										"0": "LAPTOP-GF45OR7O",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21370.1001",
+										"6": "2021-05-26 16:33:57.9880602",
+										"7": "sheryljones66@contosoisd3.onmicrosoft.com",
+										"8": "1fdc4a22-5782-4153-b005-39436190560e"
+									},
+									{
+										"0": "DESKTOP-TM31GBD",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.194",
+										"6": "2021-09-22 01:48:21.9956985",
+										"7": "rubenwiggins57@contosoisd3.onmicrosoft.com",
+										"8": "e4970d49-2cda-4b2d-9eca-5dbfefda8dc1"
+									},
+									{
+										"0": "DESKTOP-OT2NP6B",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.1",
+										"6": "2021-06-07 14:52:09.1220370",
+										"7": "troywilkinson67@contosoisd3.onmicrosoft.com",
+										"8": "a67d904f-92e4-449f-b965-9bd24319b7aa"
+									},
+									{
+										"0": "gvilla_Windows_10/1/2021_6:41 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-01 19:59:02.0000000",
+										"7": "wandacervantes2@contosoisd3.onmicrosoft.com",
+										"8": "8ad18a7f-b144-403d-aeb2-af9ff3848892"
+									},
+									{
+										"0": "DESKTOP-C552M3D",
+										"1": "Intune",
+										"2": "School",
+										"3": "Noncompliant",
+										"4": "macOS",
+										"5": "10.0.22000.120",
+										"6": "2021-08-11 16:00:44.0000000",
+										"7": "brandonellis68@contosoisd3.onmicrosoft.com",
+										"8": "9abce0db-f43a-4cd1-997c-c2d400eea066"
+									},
+									{
+										"0": "DESKTOP-U0B1RM2",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22142.1000",
+										"6": "2021-07-28 07:26:08.0000000",
+										"7": "oliviahendricks77@contosoisd3.onmicrosoft.com",
+										"8": "3fe415f4-e732-4ad0-95df-7e9adfe07a0e"
+									},
+									{
+										"0": "DESKTOP-NVVOQ5V",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.194",
+										"6": "2021-10-13 07:38:03.3074440",
+										"7": "kristinberg69@contosoisd3.onmicrosoft.com",
+										"8": "42045575-105c-47c8-b591-30a7a6a0e528"
+									},
+									{
+										"0": "LAPTOP-5D3MB31M",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.21990.1",
+										"6": "2021-06-18 17:55:32.0000000",
+										"7": "caitlinpeters61@contosoisd3.onmicrosoft.com",
+										"8": "a99036c4-cfa9-4b3d-a452-8aa8e9b44b71"
+									},
+									{
+										"0": "TapValidation_Windows_9/29/2021_4:09 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-09-29 16:21:03.1549194",
+										"7": "stevencline70@contosoisd3.onmicrosoft.com",
+										"8": "4eb201bd-5b4e-4a26-8dbf-e2435a4c35cc"
+									},
+									{
+										"0": "DESKTOP-9T996NQ",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22123.1000",
+										"6": "2021-07-06 21:29:00.0000000",
+										"7": "williamcarpenter48@contosoisd3.onmicrosoft.com",
+										"8": "ffff0742-9a99-40ad-a3d5-dcc32657dcd7"
+									},
+									{
+										"0": "TENJIN_1",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.194",
+										"6": "2021-09-24 17:09:07.0000000",
+										"7": "angelabaxter71@contosoisd3.onmicrosoft.com",
+										"8": "891a530f-34ea-490c-b57a-adfc36fdaea0"
+									},
+									{
+										"0": "DESKTOP-SHKAA5Q",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22147.1000",
+										"6": "2021-07-23 23:13:34.0000000",
+										"7": "zacharyjohnson64@contosoisd3.onmicrosoft.com",
+										"8": "a815a84b-7d86-4861-ae62-5013bf9184ee"
+									},
+									{
+										"0": "MicrosoftSummerCamp",
+										"1": "Intune",
+										"2": "School",
+										"3": "Noncompliant",
+										"4": "Windows",
+										"5": "10.0.22000.120",
+										"6": "2021-08-21 17:33:07.9869921",
+										"7": "williemartin72@contosoisd3.onmicrosoft.com",
+										"8": "deb83c2a-6ad8-4bb5-b9ce-41e5138ee781"
+									},
+									{
+										"0": "DESKTOP-M3AALSJ",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.1",
+										"6": "2021-06-08 21:20:30.5461714",
+										"7": "johnnysmith40@contosoisd3.onmicrosoft.com",
+										"8": "f9d43c72-1d11-4b4d-807b-0af368af3bf6"
+									},
+									{
+										"0": "AVI_1378948",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.194",
+										"6": "2021-09-28 19:20:29.9687524",
+										"7": "jasoneaton73@contosoisd3.onmicrosoft.com",
+										"8": "1d3c63e3-761f-49d8-b59f-db0ba6c1ebde"
+									},
+									{
+										"0": "TapValidation_Windows_9/29/2021_4:12 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "0.0.0.0",
+										"6": "2021-09-29 16:18:03.0000000",
+										"7": "edwardjohnson95@contosoisd3.onmicrosoft.com",
+										"8": "2781885c-1cca-4b00-a936-799e2063bd51"
+									},
+									{
+										"0": "LAPTOP-U4HTF5GN",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.176",
+										"6": "2021-09-14 20:27:15.0000000",
+										"7": "justincooper74@contosoisd3.onmicrosoft.com",
+										"8": "4df45c99-7acf-4a8c-860d-59d943433323"
+									},
+									{
+										"0": "DESKTOP-MJKL0GJ",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21381.1",
+										"6": "2021-05-13 07:29:05.0000000",
+										"7": "williamcarpenter48@contosoisd3.onmicrosoft.com",
+										"8": "3260e949-6970-43e4-b817-be887b84d598"
+									},
+									{
+										"0": "DESKTOP-8MTEUDF",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Android",
+										"5": "10.0.22000.132",
+										"6": "2021-08-24 18:59:05.6064921",
+										"7": "markhoward75@contosoisd3.onmicrosoft.com",
+										"8": "c99f0115-7d37-4a48-bc4d-b791d71a9c44"
+									},
+									{
+										"0": "DESKTOP-0QJTU2B",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22436.1000",
+										"6": "2021-08-30 15:43:01.5652845",
+										"7": "jessicakim96@contosoisd3.onmicrosoft.com",
+										"8": "7d4e1a30-85f3-4cd2-862c-1046c859f176"
+									},
+									{
+										"0": "AHANAKIDSURFACE",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Android",
+										"5": "10.0.22000.194",
+										"6": "2021-10-02 03:14:07.0000000",
+										"7": "thomassmith76@contosoisd3.onmicrosoft.com",
+										"8": "1f959648-c81e-4706-8e27-1b83e3287c91"
+									},
+									{
+										"0": "ASUS",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22142.1000",
+										"6": "2021-07-15 21:23:01.0149429",
+										"7": "zacharyjohnson64@contosoisd3.onmicrosoft.com",
+										"8": "c1eccc97-5ebc-4ad8-89c8-b923f9d1a848"
+									},
+									{
+										"0": "DESKTOP-8KJVJDI",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "10.0.22141.1000",
+										"6": "2021-07-20 15:33:04.9003960",
+										"7": "oliviahendricks77@contosoisd3.onmicrosoft.com",
+										"8": "e96c8523-cf2a-4e28-865c-5bce71fc626a"
+									},
+									{
+										"0": "DESKTOP-N05G193",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.37",
+										"6": "2021-06-15 16:02:18.0000000",
+										"7": "abigailsmith35@contosoisd3.onmicrosoft.com",
+										"8": "d2e4a4a3-2d32-43d3-a4cd-4bd374b400b3"
+									},
+									{
+										"0": "DESKTOP-LL8F56I",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22114.1000",
+										"6": "2021-07-06 17:06:03.0000000",
+										"7": "christinahanna78@contosoisd3.onmicrosoft.com",
+										"8": "3e9368bd-0c8e-49b8-afa9-41cfa90dfc99"
+									},
+									{
+										"0": "aniketp_Windows_10/5/2021_4:25 AM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-10-05 22:43:05.1923518",
+										"7": "gloriafowler49@contosoisd3.onmicrosoft.com",
+										"8": "52965d8c-86a0-499f-8494-83fdf1e7da78"
+									},
+									{
+										"0": "DESKTOP-PJ3NS4F",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.168",
+										"6": "2021-09-10 13:24:36.0371710",
+										"7": "amberberger79@contosoisd3.onmicrosoft.com",
+										"8": "5d7c98e0-45d4-4d4b-ab2d-cdd57ec75d5e"
+									},
+									{
+										"0": "DESKTOP-9S6MNMA",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22441.1000",
+										"6": "2021-08-23 19:22:03.0000000",
+										"7": "williamcarpenter48@contosoisd3.onmicrosoft.com",
+										"8": "f8f0f637-33e9-4169-8f9b-3ca6b10028d4"
+									},
+									{
+										"0": "louisma_Windows_10/6/2021_8:25 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-10-11 23:39:34.1975875",
+										"7": "heatherlewis80@contosoisd3.onmicrosoft.com",
+										"8": "1f04b05c-ab59-45aa-9fd6-c42e31b9ffa2"
+									},
+									{
+										"0": "SAM-T",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.194",
+										"6": "2021-10-06 19:52:26.0000000",
+										"7": "annaalvarado60@contosoisd3.onmicrosoft.com",
+										"8": "82756163-8311-45d2-8088-ea3e9b56f33b"
+									},
+									{
+										"0": "DESKTOP-DO1RIPV",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.176",
+										"6": "2021-09-07 09:18:08.0000000",
+										"7": "sarahsantiago4@contosoisd3.onmicrosoft.com",
+										"8": "f58f292f-2130-4ef4-bb39-a0b835697775"
+									},
+									{
+										"0": "jbruner_Windows_9/28/2021_8:47 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-09-28 21:35:03.0000000",
+										"7": "stephenramirez12@contosoisd3.onmicrosoft.com",
+										"8": "24cf21d3-9993-4190-8d6c-2f321a874119"
+									},
+									{
+										"0": "LAPTOP-MAQMTGTL",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.21990.1",
+										"6": "2021-06-16 03:54:33.0000000",
+										"7": "marissamaddox81@contosoisd3.onmicrosoft.com",
+										"8": "002b6f3f-428b-489b-b976-7874be2e2299"
+									},
+									{
+										"0": "GAYATRI",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Android",
+										"5": "10.0.22000.194",
+										"6": "2021-10-07 11:21:07.0000000",
+										"7": "brianmcdonald86@contosoisd3.onmicrosoft.com",
+										"8": "f84cefa2-191b-414f-aff9-fd3e0d0feebf"
+									},
+									{
+										"0": "adbr_Windows_10/5/2021_10:37 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-07 20:32:44.0000000",
+										"7": "jessicaunderwood82@contosoisd3.onmicrosoft.com",
+										"8": "2e41746a-5e46-4960-9606-af9012cb0d1b"
+									},
+									{
+										"0": "timlin_Windows_9/28/2021_10:38 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-09-29 16:56:02.0000000",
+										"7": "johnberry36@contosoisd3.onmicrosoft.com",
+										"8": "90ef3ea0-a25c-4445-8c61-d1702d2a4870"
+									},
+									{
+										"0": "DESKTOP-HIO83EA",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-09-09 13:35:56.0000000",
+										"7": "seanmartin83@contosoisd3.onmicrosoft.com",
+										"8": "63e717e5-c189-4366-8040-73e72f410e1e"
+									},
+									{
+										"0": "SFUDALLY_NPC",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.100",
+										"6": "2021-07-23 01:41:43.0000000",
+										"7": "brianmcdonald86@contosoisd3.onmicrosoft.com",
+										"8": "72723928-f861-4c0e-8438-d40152775e79"
+									},
+									{
+										"0": "adbr_Windows_10/5/2021_10:12 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Not Evaluated",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-10-05 22:27:05.0000000",
+										"7": "jamienunez84@contosoisd3.onmicrosoft.com",
+										"8": "4be00895-2681-4796-917a-1514e99c125c"
+									},
+									{
+										"0": "DESKTOP-FJD4C8F",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.120",
+										"6": "2021-10-12 02:29:49.0000000",
+										"7": "gabrieldudley27@contosoisd3.onmicrosoft.com",
+										"8": "fa48ef8c-d7f0-4767-bfa5-760f31721bb8"
+									},
+									{
+										"0": "v-sonika_Windows_10/8/2021_2:49 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-11 15:42:47.6484950",
+										"7": "melissajohnson85@contosoisd3.onmicrosoft.com",
+										"8": "6a74fe83-a7ff-4ebe-ad47-41b029696fff"
+									},
+									{
+										"0": "DEPENDENCYTEST",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22449.1000",
+										"6": "2021-08-31 00:25:00.0000000",
+										"7": "caitlinpeters61@contosoisd3.onmicrosoft.com",
+										"8": "86fd0f82-b5ee-4871-abc0-b6880f4c8fdb"
+									},
+									{
+										"0": "v-mipuzi_Windows_7/16/2021_3:49 AM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-07-16 03:49:11.0000000",
+										"7": "brianmcdonald86@contosoisd3.onmicrosoft.com",
+										"8": "3128b4f2-5d08-498a-a87c-81cd299ca059"
+									},
+									{
+										"0": "DESKTOP-OFE1B32",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.184",
+										"6": "2021-09-10 01:28:56.0000000",
+										"7": "jamesjones37@contosoisd3.onmicrosoft.com",
+										"8": "b705ae64-17ff-4fe9-8d84-6cf6322a17e0"
+									},
+									{
+										"0": "NISEHY-DEV",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22132.1001",
+										"6": "2021-07-21 20:55:15.0000000",
+										"7": "veronicacastro87@contosoisd3.onmicrosoft.com",
+										"8": "dc8d855d-4dc5-4a65-a91c-47ba91cc8f62"
+									},
+									{
+										"0": "CCF19C51BD734F0",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22463.1001",
+										"6": "2021-10-02 20:58:04.4063282",
+										"7": "gabrieldudley27@contosoisd3.onmicrosoft.com",
+										"8": "498595e2-ddcb-45c4-902a-9bf80f2ee6a7"
+									},
+									{
+										"0": "DESKTOP-R2ARLP2",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.160",
+										"6": "2021-09-01 15:57:08.7872089",
+										"7": "angelicareid88@contosoisd3.onmicrosoft.com",
+										"8": "01837421-084a-474d-95cf-9c5fb7a8e0a9"
+									},
+									{
+										"0": "anvo_Windows_10/6/2021_9:59 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Android",
+										"5": "0.0.0.0",
+										"6": "2021-10-13 08:49:29.7854802",
+										"7": "stevencline70@contosoisd3.onmicrosoft.com",
+										"8": "d29436cc-4823-4f1a-ba12-a5da24d415e4"
+									},
+									{
+										"0": "GVILLA-EDU-TJN",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.194",
+										"6": "2021-09-29 22:16:25.0000000",
+										"7": "caitlinguerrero89@contosoisd3.onmicrosoft.com",
+										"8": "04d55207-6e15-4954-9da9-dc5806a110e1"
+									},
+									{
+										"0": "DESKTOP-9TN1M56",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22155.1000",
+										"6": "2021-08-09 16:33:05.0000000",
+										"7": "caitlinguerrero89@contosoisd3.onmicrosoft.com",
+										"8": "ef9b618a-2ddb-45ef-87f8-d37b7ba23468"
+									},
+									{
+										"0": "TapValidation_Windows_10/1/2021_10:57 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-10-04 18:00:48.0000000",
+										"7": "ryanstokes90@contosoisd3.onmicrosoft.com",
+										"8": "78b69e51-bc6b-4fab-9abe-c4c97b1a9392"
+									},
+									{
+										"0": "EV2BB444",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.194",
+										"6": "2021-09-28 02:56:03.0000000",
+										"7": "caitlinpeters61@contosoisd3.onmicrosoft.com",
+										"8": "5f1d83fb-5f2e-4d34-a87c-18c9fef91b2e"
+									},
+									{
+										"0": "DESKTOP-CIPO9G8",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.194",
+										"6": "2021-09-17 15:48:34.0000000",
+										"7": "melissalawson91@contosoisd3.onmicrosoft.com",
+										"8": "8900958d-92c7-467a-8a04-d61171e6ef93"
+									},
+									{
+										"0": "S",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22122.1000",
+										"6": "2021-06-18 02:25:01.0000000",
+										"7": "sarahsantiago4@contosoisd3.onmicrosoft.com",
+										"8": "9246f544-f359-450b-9e58-3f81e294fe63"
+									},
+									{
+										"0": "DVBB3",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "10.0.22000.176",
+										"6": "2021-09-12 22:23:55.0000000",
+										"7": "thomasrice92@contosoisd3.onmicrosoft.com",
+										"8": "f66e5e7c-9e91-45f9-adec-f5bcf7e06736"
+									},
+									{
+										"0": "v-mipuzi_Windows_9/29/2021_8:37 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-09-30 14:55:05.0000000",
+										"7": "jessicaunderwood82@contosoisd3.onmicrosoft.com",
+										"8": "bf6a1031-bcad-49df-b9e6-ceef94583965"
+									},
+									{
+										"0": "HOME",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.100",
+										"6": "2021-08-05 22:28:22.9966809",
+										"7": "deniseestrada93@contosoisd3.onmicrosoft.com",
+										"8": "1fdf0758-2661-4db0-901a-7e848c6f9513"
+									},
+									{
+										"0": "ANIKET-ASUS",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.194",
+										"6": "2021-10-07 19:13:00.8511138",
+										"7": "rayjohnson7@contosoisd3.onmicrosoft.com",
+										"8": "07c56cfd-f542-4ef7-95c8-2570dfb39871"
+									},
+									{
+										"0": "stevemas_Windows_10/8/2021_5:18 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-08 18:21:03.0000000",
+										"7": "bradleydickerson94@contosoisd3.onmicrosoft.com",
+										"8": "32ce16a2-ca21-4661-9b71-fa24499d0384"
+									},
+									{
+										"0": "DESKTOP-B9AUA02",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "iOS/iPadOS",
+										"5": "10.0.22132.1000",
+										"6": "2021-07-01 14:06:05.0000000",
+										"7": "rayjohnson7@contosoisd3.onmicrosoft.com",
+										"8": "d121c7a6-9dd8-42d6-bf87-ff8cada00126"
+									},
+									{
+										"0": "DESKTOP-ECL07O1",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22147.1000",
+										"6": "2021-07-22 19:38:03.0000000",
+										"7": "edwardjohnson95@contosoisd3.onmicrosoft.com",
+										"8": "c33f5425-8401-4f4b-9230-27510593e90e"
+									},
+									{
+										"0": "SFUDALLY_NPC",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.71",
+										"6": "2021-07-20 17:01:00.0000000",
+										"7": "josephkelley4@contosoisd3.onmicrosoft.com",
+										"8": "f3fec3f3-1c10-4c4a-9225-26912414122f"
+									},
+									{
+										"0": "DESKTOP-STHRT0B",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.160",
+										"6": "2021-09-30 07:13:03.0000000",
+										"7": "jessicakim96@contosoisd3.onmicrosoft.com",
+										"8": "f3cb1efd-9507-4907-92cb-403963cc8646"
+									},
+									{
+										"0": "DESKTOP-H4UHAMF",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.184",
+										"6": "2021-09-10 14:23:02.0000000",
+										"7": "markhoward75@contosoisd3.onmicrosoft.com",
+										"8": "36783e22-92d8-4f96-ac8c-5adcc55c9370"
+									},
+									{
+										"0": "v-soboga_Windows_10/4/2021_4:22 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "0.0.0.0",
+										"6": "2021-10-05 16:17:23.0000000",
+										"7": "philipwilliams97@contosoisd3.onmicrosoft.com",
+										"8": "f267bb80-4474-4c80-b78b-c7c23bd6e3d6"
+									},
+									{
+										"0": "GERAEDU",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.51",
+										"6": "2021-06-24 04:54:01.0000000",
+										"7": "patriciadillon14@contosoisd3.onmicrosoft.com",
+										"8": "ce93ba16-8c27-4ad4-ba90-4b54c047161c"
+									},
+									{
+										"0": "scottt-student_Windows_10/5/2021_9:40 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-12 22:13:10.7473510",
+										"7": "tammyschwartz98@contosoisd3.onmicrosoft.com",
+										"8": "a378273e-b777-4b9e-bac8-1db8a90e7d9d"
+									},
+									{
+										"0": "v-soboga_Windows_10/12/2021_5:10 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-12 21:23:24.2901978",
+										"7": "stacythompson16@contosoisd3.onmicrosoft.com",
+										"8": "cdd44f98-8544-46ad-bd88-17f901265f7f"
+									},
+									{
+										"0": "timlin_Windows_9/29/2021_6:25 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-09-29 18:45:17.0000000",
+										"7": "benjaminharrison99@contosoisd3.onmicrosoft.com",
+										"8": "eb1c5737-37ea-4c68-a515-e9eccaac5c73"
+									},
+									{
+										"0": "DESKTOP-4U4TQEP",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.71",
+										"6": "2021-07-22 22:09:04.0000000",
+										"7": "ashleytodd20@contosoisd3.onmicrosoft.com",
+										"8": "2172f16e-f4e5-47d4-94ca-173652b73cfe"
+									},
+									{
+										"0": "adbr_Windows_10/7/2021_9:38 PM",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "0.0.0.0",
+										"6": "2021-10-07 21:42:05.0000000",
+										"7": "heatherarmstrong100@contosoisd3.onmicrosoft.com",
+										"8": "bf39bce2-0fab-4cf1-be19-9165721fcbff"
+									},
+									{
+										"0": "DESKTOP-MTLDAK9",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22140.1000",
+										"6": "2021-07-12 23:38:01.0000000",
+										"7": "wandacervantes2@contosoisd3.onmicrosoft.com",
+										"8": "847b5f9d-2022-4564-88cf-e17304176a14"
+									},
+									{
+										"0": "LAPTOP-DP9SH4M0",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "macOS",
+										"5": "10.0.22000.1",
+										"6": "2021-06-24 20:49:26.0000000",
+										"7": "ryanmendez5@contosoisd3.onmicrosoft.com",
+										"8": "1561ddf2-38d4-4365-84b7-ebf15cc87734"
+									},
+									{
+										"0": "EV2BB7",
+										"1": "Intune",
+										"2": "School",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.194",
+										"6": "2021-09-20 15:17:05.0000000",
+										"7": "jasoneaton73@contosoisd3.onmicrosoft.com",
+										"8": "dfbed516-dd17-44b1-98ba-fd4c414ef06b"
+									},
+									{
+										"0": "LAPTOP-2839STV",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22118.1000",
+										"6": "2021-10-12 16:13:03.8803119",
+										"7": "debrasmith1@contosoisd3.onmicrosoft.com",
+										"8": "a6383dc9-9f8e-4ca2-9318-afd9b604554e"
+									},
+									{
+										"0": "SMILEY2821",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Not Evaluated",
+										"4": "iOS/iPadOS",
+										"5": "0.0.0.0",
+										"6": "2021-09-21 18:07:48.0000000",
+										"7": "debrasmith1@contosoisd3.onmicrosoft.com",
+										"8": "10c83379-b0a6-f632-d378-7ac9b603e724"
+									},
+									{
+										"0": "DESKTOP-UPD28",
+										"1": "Intune",
+										"2": "Unknown",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.120",
+										"6": "2021-10-08 04:09:03.0000000",
+										"7": "maxwelljones6@contosoisd3.onmicrosoft.com",
+										"8": "dd61d4b8-35af-cc53-d298-1e977a8433aa"
+									},
+									{
+										"0": "LAPTOP-SHELL43",
+										"1": "Intune",
+										"2": "Personal",
+										"3": "Compliant",
+										"4": "Windows",
+										"5": "10.0.22000.176",
+										"6": "2021-09-17 18:36:03.9886625",
+										"7": "shelbyberger1@contosoisd3.onmicrosoft.com",
+										"8": "2442a3a8-c25d-920a-f031-ba196a8c93ff"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "DeviceName",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "ManagedBy",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "Ownership",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "Compliance",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "OS",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "OSVersion",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "LastCheckIn",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "PrimaryUserUPN",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "DeviceID",
+										"type": "string"
+									}
+								]
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Intune Module Data Generation\r\n",
+					"*(Christian Stohlmann)*\r\n",
+					"\r\n",
+					"Uses the old Intune Devices CSV to try and generate more realistic data.\r\n",
+					"\r\n",
+					"This does notebook basically does the same thing as the old notebook \"Intune Module Data Processing\", \r\n",
+					"except for now has the updated Devices so that IDs and now replaced with UPNs.\r\n",
+					"\r\n",
+					"There are also some other other sample data lines hardcoded in order to simulate realistic data a little better."
+				],
+				"attachments": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"from pyspark.sql.types import StructType, StructField, StringType, IntegerType, DoubleType, ArrayType, TimestampType\r\n",
+					"from pyspark.sql.functions import *\r\n",
+					"from pyspark.sql.window import Window\r\n",
+					"import datetime\r\n",
+					"\r\n",
+					"# data lake and container information\r\n",
+					"storage_account = 'stoeadaihackathon'\r\n",
+					"use_test_env = False\r\n",
+					"\r\n",
+					"if use_test_env:\r\n",
+					"    stage1np = 'abfss://test-env@' + storage_account + '.dfs.core.windows.net/stage1np'\r\n",
+					"    stage2np = 'abfss://test-env@' + storage_account + '.dfs.core.windows.net/stage2np'\r\n",
+					"    stage2p = 'abfss://test-env@' + storage_account + '.dfs.core.windows.net/stage2p'\r\n",
+					"else:\r\n",
+					"    stage1np = 'abfss://stage1np@' + storage_account + '.dfs.core.windows.net'\r\n",
+					"    stage2np = 'abfss://stage2np@' + storage_account + '.dfs.core.windows.net'\r\n",
+					"    stage2p = 'abfss://stage2p@' + storage_account + '.dfs.core.windows.net'"
+				],
+				"attachments": null,
+				"execution_count": 10
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"dfOldIntuneDevices = spark.read.format('csv').load(f'{stage1np}/m365/intune/devices/sis_recombined/*.csv', header='true')\r\n",
+					"dfUsers = spark.read.format('csv').load(f'{stage1np}/m365/AAD/users/newUsers.csv/*.csv', header='true')"
+				],
+				"attachments": null,
+				"execution_count": 11
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(dfOldIntuneDevices.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 12
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"display(dfUsers)"
+				],
+				"attachments": null,
+				"execution_count": 13
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"# Method for replacing the OldIntuneDevices column \"UPNs\" to not include IDs, and also randomize those devices to be someone else's. \r\n",
+					"num_of_devices = dfOldIntuneDevices.count()\r\n",
+					"isolated_UPNs = dfUsers.select('userPrincipalName').collect()\r\n",
+					"list_of_deviceNames = dfOldIntuneDevices.select('DeviceName').collect()\r\n",
+					"list_of_managedBys = dfOldIntuneDevices.select('ManagedBy').collect()\r\n",
+					"list_of_ownerships = dfOldIntuneDevices.select('Ownership').collect()\r\n",
+					"list_of_compliances = dfOldIntuneDevices.select('Compliance').collect()\r\n",
+					"list_of_OSs = dfOldIntuneDevices.select('OS').collect()\r\n",
+					"list_of_OSVersions = dfOldIntuneDevices.select('OSVersion').collect()\r\n",
+					"list_of_lastCheckIns = dfOldIntuneDevices.select('LastCheckIn').collect()\r\n",
+					"list_of_primaryUserUPNs = dfOldIntuneDevices.select('PrimaryUserUPN').collect()\r\n",
+					"list_of_deviceIDs = dfOldIntuneDevices.select('DeviceID').collect()\r\n",
+					"\r\n",
+					"dfOldIntuneDevices = dfOldIntuneDevices.withColumn('randomNumbers', ceil(rand()*100))\r\n",
+					"list_of_randomNumbers = dfOldIntuneDevices.select('randomNumbers').collect()\r\n",
+					"\r\n",
+					"devicesSchema = StructType(fields=[\r\n",
+					"    StructField('DeviceName', StringType(), False),\r\n",
+					"    StructField('ManagedBy', StringType(), False),\r\n",
+					"    StructField('Ownership', StringType(), False),\r\n",
+					"    StructField('Compliance', StringType(), False),\r\n",
+					"    StructField('OS', StringType(), False),\r\n",
+					"    StructField('OSVersion', StringType(), False),\r\n",
+					"    StructField('LastCheckIn', TimestampType(), False),\r\n",
+					"    StructField('PrimaryUserUPN', StringType(), False),\r\n",
+					"    StructField('DeviceID', StringType(), False)\r\n",
+					"])\r\n",
+					"\r\n",
+					"dfNewDevicesGen = spark.createDataFrame([], devicesSchema)\r\n",
+					"\r\n",
+					"UPNPlaceHolder = 0\r\n",
+					"\r\n",
+					"for n in range(num_of_devices):\r\n",
+					"    # Updates UPNs without IDs and randomizes them\r\n",
+					"    if list_of_primaryUserUPNs[n][0] != isolated_UPNs[UPNPlaceHolder][0]:\r\n",
+					"        # Updates Ownerships to say \"school\" instead of \"corporate\"\r\n",
+					"        if list_of_ownerships[n][0] == \"Corporate\":\r\n",
+					"            randomNumber = list_of_randomNumbers[n][0]\r\n",
+					"\r\n",
+					"            deviceName = list_of_deviceNames[n][0]\r\n",
+					"            managedBy = list_of_managedBys[n][0]\r\n",
+					"            compliance = list_of_compliances[n][0]\r\n",
+					"            oS = list_of_OSs[n][0]\r\n",
+					"            oSVersion = list_of_OSVersions[n][0]\r\n",
+					"            lastCheckIn = list_of_lastCheckIns[n][0]\r\n",
+					"            primaryUserUPN = isolated_UPNs[randomNumber][0]\r\n",
+					"            deviceID = list_of_deviceIDs[n][0]\r\n",
+					"            newRow = spark.createDataFrame([(deviceName, managedBy, 'School', compliance, '', oSVersion, lastCheckIn, primaryUserUPN, deviceID)])\r\n",
+					"        \r\n",
+					"            dfNewDevicesGen = dfNewDevicesGen.union(newRow)\r\n",
+					"            UPNPlaceHolder = UPNPlaceHolder + 1\r\n",
+					"        else: \r\n",
+					"            randomNumber = list_of_randomNumbers[n][0]\r\n",
+					"\r\n",
+					"            deviceName = list_of_deviceNames[n][0]\r\n",
+					"            managedBy = list_of_managedBys[n][0]\r\n",
+					"            ownership = list_of_ownerships[n][0]\r\n",
+					"            compliance = list_of_compliances[n][0]\r\n",
+					"            oS = list_of_OSs[n][0]\r\n",
+					"            oSVersion = list_of_OSVersions[n][0]\r\n",
+					"            lastCheckIn = list_of_lastCheckIns[n][0]\r\n",
+					"            primaryUserUPN = isolated_UPNs[randomNumber][0]\r\n",
+					"            deviceID = list_of_deviceIDs[n][0]\r\n",
+					"            newRow = spark.createDataFrame([(deviceName, managedBy, ownership, compliance, '', oSVersion, lastCheckIn, primaryUserUPN, deviceID)])\r\n",
+					"        \r\n",
+					"            dfNewDevicesGen = dfNewDevicesGen.union(newRow)\r\n",
+					"            UPNPlaceHolder = UPNPlaceHolder + 1\r\n",
+					"\r\n",
+					"    elif list_of_ownerships[n][0] == \"Corporate\":\r\n",
+					"        deviceName = list_of_deviceNames[n][0]\r\n",
+					"        managedBy = list_of_managedBys[n][0]\r\n",
+					"        compliance = list_of_compliances[n][0]\r\n",
+					"        oS = list_of_OSs[n][0]\r\n",
+					"        oSVersion = list_of_OSVersions[n][0]\r\n",
+					"        lastCheckIn = list_of_lastCheckIns[n][0]\r\n",
+					"        primaryUserUPN = list_of_primaryUserUPNs[n][0]\r\n",
+					"        deviceID = list_of_deviceIDs[n][0]\r\n",
+					"        newRow = spark.createDataFrame([(deviceName, managedBy, 'School', compliance, '', oSVersion, lastCheckIn, primaryUserUPN, deviceID)])\r\n",
+					"        \r\n",
+					"        dfNewDevicesGen = dfNewDevicesGen.union(newRow)\r\n",
+					"    \r\n",
+					"    else: \r\n",
+					"        deviceName = list_of_deviceNames[n][0]\r\n",
+					"        managedBy = list_of_managedBys[n][0]\r\n",
+					"        ownership = list_of_ownerships[n][0]\r\n",
+					"        compliance = list_of_compliances[n][0]\r\n",
+					"        oS = list_of_OSs[n][0]\r\n",
+					"        oSVersion = list_of_OSVersions[n][0]\r\n",
+					"        lastCheckIn = list_of_lastCheckIns[n][0]\r\n",
+					"        primaryUserUPN = list_of_primaryUserUPNs[n][0]\r\n",
+					"        deviceID = list_of_deviceIDs[n][0]\r\n",
+					"        newRow = spark.createDataFrame([(deviceName, managedBy, ownership, compliance, '', oSVersion, lastCheckIn, primaryUserUPN, deviceID)])\r\n",
+					"        \r\n",
+					"        dfNewDevicesGen = dfNewDevicesGen.union(newRow)\r\n",
+					"\r\n",
+					"\r\n",
+					"display(dfNewDevicesGen.limit(10))"
+				],
+				"attachments": null,
+				"execution_count": 14
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"dfNewDevicesGen = dfNewDevicesGen.withColumn('OS', when(rand() > 0.5, 'macOS').when(rand() > 0.8, 'iOS/iPadOS').when(rand() > 0.9, 'Android').otherwise('Windows'))"
+				],
+				"attachments": null,
+				"execution_count": 15
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"# Added a few more rows of random people in order to have someone with 4 or 3 devices; can add more.\r\n",
+					"newRow1 = spark.createDataFrame([(\"LAPTOP-2839STV\", \"Intune\", \"Personal\", \"Compliant\", \"Windows\", \"10.0.22118.1000\", \"2021-10-12 16:13:03.8803119\", \"debrasmith1@contosoisd3.onmicrosoft.com\", \"a6383dc9-9f8e-4ca2-9318-afd9b604554e\")])\r\n",
+					"newRow2 = spark.createDataFrame([(\"SMILEY2821\", \"Intune\", \"Unknown\", \"Not Evaluated\", \"iOS/iPadOS\", \"0.0.0.0\", \"2021-09-21 18:07:48.0000000\", \"debrasmith1@contosoisd3.onmicrosoft.com\", \"10c83379-b0a6-f632-d378-7ac9b603e724\")])\r\n",
+					"newRow3 = spark.createDataFrame([(\"DESKTOP-UPD28\", \"Intune\", \"Unknown\", \"Compliant\", \"Windows\", \"10.0.22000.120\", \"2021-10-08 04:09:03.0000000\", \"maxwelljones6@contosoisd3.onmicrosoft.com\", \"dd61d4b8-35af-cc53-d298-1e977a8433aa\")])\r\n",
+					"newRow4 = spark.createDataFrame([(\"LAPTOP-SHELL43\", \"Intune\", \"Personal\", \"Compliant\", \"Windows\", \"10.0.22000.176\", \"2021-09-17 18:36:03.9886625\", \"shelbyberger1@contosoisd3.onmicrosoft.com\", \"2442a3a8-c25d-920a-f031-ba196a8c93ff\")])\r\n",
+					"\r\n",
+					"dfNewDevicesGen = dfNewDevicesGen.union(newRow1)\r\n",
+					"dfNewDevicesGen = dfNewDevicesGen.union(newRow2)\r\n",
+					"dfNewDevicesGen = dfNewDevicesGen.union(newRow3)\r\n",
+					"dfNewDevicesGen = dfNewDevicesGen.union(newRow4)\r\n",
+					"display(dfNewDevicesGen)"
+				],
+				"attachments": null,
+				"execution_count": 16
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"dfNewIntuneDevices = dfNewDevicesGen\r\n",
+					"dfNewIntuneDevices.coalesce(1).write.csv('abfss://stage1np@stoeadaihackathon.dfs.core.windows.net/intune_module/devices', header='true')"
+				],
+				"attachments": null,
+				"execution_count": 18
+			}
+		]
+	}
+}
